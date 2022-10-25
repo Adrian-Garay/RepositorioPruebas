@@ -1,7 +1,13 @@
 #include "vehiculo.h"
+#include <stdlib.h>
+#include <time.h> // es necesario incluirla
+#include<iostream>
+#include "string.h"
+using namespace std;
+
 //Constructor para inicualizar los atributos
 
-vehiculo::vehiculo(char nBastidor , char modelo, char color, int concesionario)
+vehiculo::vehiculo(char nBastidor, char modelo, char color, int concesionario)
 {
     nBastidor= nBastidor;
     modelo= Modelo;
@@ -9,18 +15,19 @@ vehiculo::vehiculo(char nBastidor , char modelo, char color, int concesionario)
     concesionario = Concesionario;
     //ctor
 }
-void vehiculo :: crear (){
-    nBastidor =
-            char letras[]="ABCDEFGHIJ";
-         cout<<endl<<"10 carscteres aleatorios: "<<endl;
-         for(c = 1; c <= 10; c++)
-         {
-         num = 1 + rand() % (11 - 1);
-         cout << letras[num-1]<< " ";
-         }
-         cout<<endl<<"10 carscteres aleatorios: "<<endl;
-         char car
+void vehiculo :: crearNBastidor ()
+{
+    int main()
+    {
+        int num, c;
+        srand(time(NULL));
+        for(c = 1; c <= 5; c++)
+        {
+            num = 1 + rand() % (999); //GENERA ALEATORIOS ENTRE 0 Y 9, SUMO 1 (1 A 10)
+            cout << num<< " ";
+        }
 
 
-    cout <<"Coche:" << nBastidor<<","<<modelo <<color<<concesionario<<endl;
-}
+
+        cout <<"Coche:" << nBastidor<<endl;
+    }
