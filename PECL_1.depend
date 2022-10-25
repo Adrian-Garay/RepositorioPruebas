@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1666721628 source:c:\users\ajgar\desktop\pecl_1\src\nodopila.cpp
+	"../include/NodoPila.h"
+
+1666721474 c:\users\ajgar\desktop\pecl_1\include\nodopila.h
+	<iostream>
+
+1666721659 source:c:\users\ajgar\desktop\pecl_1\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+
+1666721385 c:\users\ajgar\desktop\pecl_1\include\pila.h
+	"NodoPila.h"
+
+1666721527 c:\users\ajgar\desktop\pecl_1\include\cola.h
+	"NodoCola.h"
+
+1666721284 c:\users\ajgar\desktop\pecl_1\include\nodocola.h
+	<iostream>
+
+1666721672 source:c:\users\ajgar\desktop\pecl_1\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	<iostream>
+
+1666721698 source:c:\users\ajgar\desktop\pecl_1\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
