@@ -5,6 +5,77 @@ using namespace std;
 
 int main()
 {
+    int menu_entrada;
+    bool bucle=true;
+    string error = "Operación erronea.\n";
+
+    //Opciones del menú
+    while(bucle){
+        cout<<"Indique la operación que desea realizar:\n";
+        cout<<"1 -> Generar aleatoriamente la cola de automóviles disponibles en la fábrica con NV automóviles.\n";
+        cout<<"2 -> Generar aleatoriamente la cola de automóviles disponibles en la fábrica solicitando NV por pantalla.\n";
+        cout<<"3 -> Mostrar en pantalla los datos de la cola de automóviles disponibles en la fábrica.\n";
+        cout<<"4 -> Borrar la cola de automóviles disponibles en la fábrica.\n";
+        cout<<"5 -> Sacar NS automóviles del almacén de la fábrica y llevarlos a un almacén de zona aleatorio.\n";
+        cout<<"6 -> Sacar NS automóviles del almacén de la fábrica y llevarlos a un almacén de zona.\n";
+        cout<<"7 -> Mostrar en pantalla los datos de los almacenes de zona y registro\n";
+        cout<<"8 -> Realizar la simulación hasta finalizar los automóviles disponibles\n";
+        cout<<"0 -> Salir\n";
+        cin>>menu_entrada;
+
+        //Primera opción
+        if (menu_entrada == 1){
+            cout<<"Ha elegido la primera opción\n";
+        }
+
+        //Segunda opción
+        else if (menu_entrada == 2){
+            cout<<"Ha elegido la segunda opcion\n";
+        }
+
+        //Tercera opción
+        else if (menu_entrada == 3){
+            cout<<"Ha elegido la tercera opción\n";
+        }
+
+        //Cuarta opción
+        else if (menu_entrada == 4){
+            cout<<"Ha elegido la cuarta opción\n";
+        }
+
+        //Quinta opción
+        else if (menu_entrada == 5){
+            cout<<"Ha elegido la quinta opción\n";
+        }
+
+        //Sexta opción
+        else if (menu_entrada == 6){
+            cout<<"Ha elegido la sexta opción\n";
+        }
+
+        //Septima opción
+        else if (menu_entrada == 7){
+            cout<<"Ha elegido la séptima opción\n";
+        }
+
+        //Octava opción
+        else if (menu_entrada == 8){
+            cout<<"Ha elegido la octava opción\n";
+        }
+
+        //Salir del programa
+        else if (menu_entrada == 0){
+            bucle=false;
+        }
+
+        //Texto error
+        else{
+                cout<<error<<"\n";
+        }
+    }
+
+
+
     //Ejercicio 1 Pilas
 	/*cout << " " << endl;
     cout << "Ejercicio 1 " << endl;
@@ -65,6 +136,7 @@ int main()
 	//p1.desapilar();	p1.mostrar();
 	//	p1.~Pila(); //es innecesario, se va a llamar al destructor al salir de la ejecución
 
+    /*
     cout << "Creamos la cola Vacía" << endl;
     Cola c; c.mostrarCola();
     cout<< "Encolo 0" << endl;
@@ -79,7 +151,7 @@ int main()
     cout<< "Desencolo" << endl;
     c.desencolar(); c.mostrarCola();
     cout<< "Longitud Cola: " << c.get_longitud()<<endl;
-    c.~Cola();
+    c.~Cola();*/
 
 	return 0;
 }

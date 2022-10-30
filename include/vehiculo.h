@@ -7,6 +7,8 @@ class vehiculo
     public:
         //metodos
         void crear ();
+        vehiculo(char nBastidor, char modelo, char color, int concesionario);
+        void crearNBastidor ();
 
     protected:
 

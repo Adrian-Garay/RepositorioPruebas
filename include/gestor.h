@@ -6,7 +6,8 @@ class gestor
 {
     public:
         gestor();
-        virtual ~gestor();
+        ~gestor();
+        void crea_vehiculo(int n);
 
     protected:
 

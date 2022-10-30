@@ -1,4 +1,8 @@
+#include <string>
+#include <iostream>
 #include "gestor.h"
+#include "vehiculo.h"
+using namespace std;
 
 gestor::gestor()
 {
@@ -8,7 +12,7 @@ gestor::gestor()
 
 void gestor::crea_vehiculo(int n)
 {
-    vehiculo v;
+    /*vehiculo v;
     for (int i=0; i<n; i++)
     {
         cout<<"c_reserva_aleatorio numero " + to_string(i);
@@ -36,5 +40,5 @@ void gestor::crea_vehiculo(int n)
         c.cargarCliente(id, t, 0);
         cargarPila(c);
 
-    }
+    }*/
 }

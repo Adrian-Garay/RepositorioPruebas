@@ -67,3 +67,58 @@
 
 1666726074 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola_fabrica.h
 
+1667135464 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+
+1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+
+1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
+	<iostream>
+
+1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+
+1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+	<iostream>
+
+1666718983 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	<iostream>
+
+1666775680 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola_fabrica.cpp
+	"Cola_fabrica.h"
+
+1666775680 c:\users\ajgar\desktop\repositoriopruebas\include\cola_fabrica.h
+
+1667134239 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	"gestor.h"
+	"vehiculo.h"
+
+1667135362 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+
+1667134343 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+
+1666718983 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+
+1666718983 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+
+1666718983 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
+1667135195 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	"string.h"
+

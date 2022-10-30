@@ -15,19 +15,15 @@ vehiculo::vehiculo(char nBastidor, char modelo, char color, int concesionario)
     concesionario = Concesionario;
     //ctor
 }
-void vehiculo :: crearNBastidor ()
+/*void vehiculo :: crearNBastidor ()
 {
-    int main()
-    {
-        int num, c;
-        srand(time(NULL));
-        for(c = 1; c <= 5; c++)
-        {
-            num = 1 + rand() % (999); //GENERA ALEATORIOS ENTRE 0 Y 9, SUMO 1 (1 A 10)
-            cout << num<< " ";
-        }
+    int num, c;
+    srand(time(NULL));
+    for(c = 1; c <= 5; c++)
 
 
 
+        num = 1 + rand() % (999); //GENERA ALEATORIOS ENTRE 0 Y 9, SUMO 1 (1 A 10)
+        cout << num<< " ";
         cout <<"Coche:" << nBastidor<<endl;
-    }
+}*/
