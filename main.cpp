@@ -1,13 +1,17 @@
 #include <iostream>
 #include "include\Pila.h"
 #include "include/Cola.h"
+#include <locale.h>
+
 using namespace std;
 
 int main()
 {
+    setlocale(LC_CTYPE, "Spanish");
+
     int menu_entrada;
     bool bucle=true;
-    string error = "Operación erronea.\n";
+    string error = "Operación erronea. Vuelva a intentarlo.\n";
 
     //Opciones del menú
     while(bucle){
@@ -18,9 +22,9 @@ int main()
         cout<<"4 -> Borrar la cola de automóviles disponibles en la fábrica.\n";
         cout<<"5 -> Sacar NS automóviles del almacén de la fábrica y llevarlos a un almacén de zona aleatorio.\n";
         cout<<"6 -> Sacar NS automóviles del almacén de la fábrica y llevarlos a un almacén de zona.\n";
-        cout<<"7 -> Mostrar en pantalla los datos de los almacenes de zona y registro\n";
-        cout<<"8 -> Realizar la simulación hasta finalizar los automóviles disponibles\n";
-        cout<<"0 -> Salir\n";
+        cout<<"7 -> Mostrar en pantalla los datos de los almacenes de zona y registro.\n";
+        cout<<"8 -> Realizar la simulación hasta finalizar los automóviles disponibles.\n";
+        cout<<"0 -> Salir.\n";
         cin>>menu_entrada;
 
         //Primera opción

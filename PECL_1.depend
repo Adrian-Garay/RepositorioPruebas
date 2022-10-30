@@ -67,10 +67,11 @@
 
 1666726074 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola_fabrica.h
 
-1667135464 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1667136217 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
+	<locale.h>
 
 1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
 	"NodoPila.h"
