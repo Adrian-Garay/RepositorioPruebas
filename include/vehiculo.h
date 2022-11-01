@@ -9,6 +9,7 @@ class Vehiculo
         //metodos
         Vehiculo();
         Vehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario);
+        void cargarVehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario);
 
 
 

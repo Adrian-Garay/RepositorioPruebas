@@ -24,6 +24,13 @@ Vehiculo::Vehiculo(std::string nBastidor, std::string modelo, std::string color,
     //ctor
 }
 
+void Vehiculo::cargarVehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario)
+{
+    nBastidor = NBastidor;
+    modelo = Modelo;
+    color = Color;
+    concesionario = Concesionario;
+}
 
 /*void vehiculo :: crearNBastidor ()
 {

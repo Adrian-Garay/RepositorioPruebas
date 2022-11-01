@@ -1,6 +1,11 @@
 #include <iostream>
 #include "include\Pila.h"
 #include "include/Cola.h"
+#include "vehiculo.h"
+#include "gestor.h"
+#include <stdlib.h>
+#include <time.h>
+#include "string.h"
 #include <locale.h>
 
 using namespace std;
@@ -13,6 +18,8 @@ int main()
     int menu_entrada;
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
+
+    Gestor g;
 
     //Opciones del menú
     while(bucle){
@@ -30,22 +37,11 @@ int main()
 
         //Primera opción
         if (menu_entrada == 1){
-            cout<<"\nHa elegido la primera opción\n";
-            cout << "Creamos la cola Vacía" << endl;
-            Cola c; c.mostrarCola();
-            cout<< "Encolo 0" << endl;
-            c.encolar('0'); c.mostrarCola();;
-            cout<< "Encolo 1" << endl;
-            c.encolar('1'); c.mostrarCola();;
-            cout<< "Encolo 2" << endl;
-            c.encolar('2'); c.mostrarCola();;
-            cout<< "Primero" << c.inicio()<<endl;
-            cout<< "Ultimo" << c.fin()<<endl;
-            cout<< "Longitud Cola: " << c.get_longitud()<<endl;
-            cout<< "Desencolo" << endl;
-            c.desencolar(); c.mostrarCola();
-            cout<< "Longitud Cola: " << c.get_longitud()<<endl;
-            c.~Cola();
+            g.crea_vehiculos(20);
+            cout<<"\n";
+
+
+
         }
 
         //Segunda opción

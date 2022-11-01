@@ -1,3 +1,4 @@
+#include<iostream>
 #ifndef GESTOR_H
 #define GESTOR_H
 #include "Pila.h"
@@ -5,11 +6,11 @@
 using namespace std;
 
 
-class gestor
+class Gestor
 {
     public:
-        gestor();
-        ~gestor();
+        Gestor();
+        ~Gestor();
         //variables
         std::string NBastidor;
         std::string Modelo;
@@ -18,7 +19,10 @@ class gestor
 
 
         //funciones
-        void crea_vehiculo(int n);
+        void crea_vehiculos(int nv);
+
+        //Pilas y colas
+        Cola Cola_fabrica;               //Cola de la fabrica que contendra los automoviles
 
     protected:
 
