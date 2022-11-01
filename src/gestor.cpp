@@ -19,7 +19,7 @@ Gestor::~Gestor()
 
 void Gestor::crea_vehiculos(int nv)
 {
-    Vehiculo v;
+    Vehiculo vehiculos_cola;
     int num;
     srand(time(NULL)); //SOLO UNA VEZ EN TODO EL CÓDIGO, INICIALIZA RAND
     std::string numero_bastidor= "";
@@ -46,8 +46,8 @@ void Gestor::crea_vehiculos(int nv)
         cout << endl<<"Modelo: "<<modelo<< " ";
         color=listaColores[rand() % (8)];                          //Crea el color del vehicul
         cout << endl<<"Color: "<<color<< " ";
-        v.cargarVehiculo(numero_bastidor,modelo,color,concesionario);
-        Cola_fabrica.encolar(v);
+        vehiculos_cola.cargarVehiculo(numero_bastidor,modelo,color,concesionario);
+        Cola_fabrica.encolar(vehiculos_cola);
         cout<<"\n";
 
         }
@@ -66,5 +66,12 @@ void Gestor::muestra_almacen_fabrica()
         cout<<"longitud  = "+to_string(colaAux.get_longitud()) + "\n";
         vAux=colaAux.desencolar();
         Cola_fabrica.encolar(vAux);
+    }
+}
+
+void Gestor::limpia_almacen()
+{
+    while(!Cola_fabrica.es_vacia()){
+        Cola_fabrica.desencolar();
     }
 }

@@ -34,20 +34,9 @@ void Vehiculo::cargarVehiculo(std::string nBast,std::string mod, std::string col
 
 std::string Vehiculo::verVehiculo()
 {
-    std::string numero = Vehiculo.nBastidor();
     cout<<"El vehiculo tiene numero de bastidor: "+ nBastidor+"\n";
-    return("El vehiculo tiene numero de bastidor: "+ std::string (nBastidor) + ", modelo: "+ std::string (modelo) + ", color: "+ std::string (color) + ", concesionario: " + std::to_string(concesionario));
+    cout<<"El vehiculo tiene modelo: "+ modelo+"\n";
+    cout<<"El vehiculo tiene color: "+ color+"\n";
+    cout<<"El vehiculo tiene concesionario: "+ std::to_string(concesionario)+"\n";
+    return("El vehiculo tiene numero de bastidor: "+ nBastidor + ", modelo: "+ modelo + ", color: "+ color + ", concesionario: " + std::to_string(concesionario)+" ");
 }
-
-/*void vehiculo :: crearNBastidor ()
-{
-    int num, c;
-    srand(time(NULL));
-    for(c = 1; c <= 5; c++)
-
-
-
-        num = 1 + rand() % (999); //GENERA ALEATORIOS ENTRE 0 Y 9, SUMO 1 (1 A 10)
-        cout << num<< " ";
-        cout <<"Coche:" << nBastidor<<endl;
-}*/

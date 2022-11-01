@@ -18,6 +18,7 @@ int main()
     int menu_entrada;
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
+    int nv;
 
     Gestor g;
 
@@ -37,28 +38,43 @@ int main()
 
         //Primera opción
         if (menu_entrada == 1){
-            g.crea_vehiculos(20);
+            g.crea_vehiculos(20);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
         }
 
 
         //Segunda opción
-        else if (menu_entrada == 2){
-            cout<<"Ha elegido la segunda opcion\n";
+        else if (menu_entrada == 2){                //genera nv vehículos y los mete en el almacen de la fabrica
+            cout<<"Indique cuantos vehículos quiere generar: \n";
+            try {
+              cin>>nv;
+              if ((nv>10)&&(nv<30)){
+                    g.crea_vehiculos(nv);
+              } else {
+                throw (505);
+              }
+            }
+            catch (...) {
+              cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
+            }
         }
 
 
         //Tercera opción
         else if (menu_entrada == 3){
-            g.muestra_almacen_fabrica();
+            g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
         }
 
 
         //Cuarta opción
         else if (menu_entrada == 4){
-            cout<<"Ha elegido la cuarta opción\n";
+            g.limpia_almacen();                     //Borra los automoviles almacenados en el almacen de la fabrica
+            cout<<"Almacen de la fabrica vaciado.\n";
         }
+
+
+
 
         //Quinta opción
         else if (menu_entrada == 5){
