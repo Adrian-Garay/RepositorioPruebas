@@ -9,7 +9,8 @@ private:
         NodoCola* ultimo;
         int longitud;
 public:
-    Cola(); ~Cola();
+    Cola();
+    ~Cola();
     void encolar(char);
     char inicio();
     char fin();

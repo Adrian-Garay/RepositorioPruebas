@@ -9,6 +9,7 @@ int main()
 {
     setlocale(LC_CTYPE, "Spanish");
 
+    //Variables
     int menu_entrada;
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
@@ -29,7 +30,22 @@ int main()
 
         //Primera opción
         if (menu_entrada == 1){
-            cout<<"Ha elegido la primera opción\n";
+            cout<<"\nHa elegido la primera opción\n";
+            cout << "Creamos la cola Vacía" << endl;
+            Cola c; c.mostrarCola();
+            cout<< "Encolo 0" << endl;
+            c.encolar('0'); c.mostrarCola();;
+            cout<< "Encolo 1" << endl;
+            c.encolar('1'); c.mostrarCola();;
+            cout<< "Encolo 2" << endl;
+            c.encolar('2'); c.mostrarCola();;
+            cout<< "Primero" << c.inicio()<<endl;
+            cout<< "Ultimo" << c.fin()<<endl;
+            cout<< "Longitud Cola: " << c.get_longitud()<<endl;
+            cout<< "Desencolo" << endl;
+            c.desencolar(); c.mostrarCola();
+            cout<< "Longitud Cola: " << c.get_longitud()<<endl;
+            c.~Cola();
         }
 
         //Segunda opción

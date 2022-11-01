@@ -4,20 +4,22 @@
 
 class Pila
 {
-private:
-	pnodo cima;
-public:
-	Pila();
-	~Pila();
-	bool esVacia();
-	void apilar(int v);
-	void desapilar();
-	int mostrar();
-	int contar();
-	int fondo();
-	void montar(Pila p1, Pila p2);
-	void quitar(int n);
-	void inversa();
+    private:
+        pnodo cima;
+    public:
+        Pila();
+        virtual~Pila();
+        bool esVacia();
+        void apilar(int v);
+        void desapilar();
+
+        int mostrar();
+        int contar();
+        int fondo();
+        void montar(Pila p1, Pila p2);
+        void quitar(int n);
+        void inversa();
+    protected:
 };
 
 

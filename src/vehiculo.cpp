@@ -2,19 +2,29 @@
 #include <stdlib.h>
 #include <time.h> // es necesario incluirla
 #include<iostream>
+#include<string>
 #include "string.h"
 using namespace std;
 
 //Constructor para inicualizar los atributos
+Vehiculo::Vehiculo()
+{
+    nBastidor= "";
+    modelo= "";
+    color = "";
+    concesionario = 0;
+}
 
-vehiculo::vehiculo(char nBastidor, char modelo, char color, int concesionario)
+Vehiculo::Vehiculo(std::string nBastidor, std::string modelo, std::string color, int concesionario)
 {
     nBastidor= nBastidor;
-    modelo= Modelo;
-    color = Color ;
-    concesionario = Concesionario;
+    modelo= modelo;
+    color = color ;
+    concesionario = concesionario;
     //ctor
 }
+
+
 /*void vehiculo :: crearNBastidor ()
 {
     int num, c;

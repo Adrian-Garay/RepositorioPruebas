@@ -8,6 +8,7 @@ Pila::Pila()
 	cima = NULL;
 }
 
+//Destructor
 Pila::~Pila()
 {
 	while (cima) desapilar();
@@ -21,7 +22,6 @@ bool Pila::esVacia()
 void Pila::apilar(int v)
 {
 	pnodo nuevo = new NodoPila(v, cima);
-
 	//comienzo de la pila nevo nodo
 	cima = nuevo;
 }
@@ -127,6 +127,4 @@ void Pila::quitar(int n){
         pi.desapilar();
         apilar(e);
     }
-
-
  }
