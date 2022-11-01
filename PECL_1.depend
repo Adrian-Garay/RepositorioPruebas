@@ -67,7 +67,7 @@
 
 1666726074 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola_fabrica.h
 
-1667327985 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1667335102 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -84,23 +84,26 @@
 1666717874 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
 	<iostream>
 
-1667308262 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+1667332568 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
 	"NodoCola.h"
+	"vehiculo.h"
 
-1666717684 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+1667332353 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
 	<iostream>
 
-1666718072 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+1667332559 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
+	"vehiculo.h"
 	<iostream>
 
-1666804193 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola_fabrica.cpp
+1667332048 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola_fabrica.cpp
 	"Cola_fabrica.h"
 
-1666804193 c:\users\ajgar\desktop\repositoriopruebas\include\cola_fabrica.h
+1667332048 c:\users\ajgar\desktop\repositoriopruebas\include\cola_fabrica.h
 
-1667328026 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1667334718 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -109,16 +112,17 @@
 	"gestor.h"
 	"vehiculo.h"
 
-1667327996 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1667333211 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 
-1667323817 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+1667335358 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1666718130 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
+1667332646 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
+	"vehiculo.h"
 
 1666718028 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
 	"../include/NodoPila.h"
@@ -128,7 +132,7 @@
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1667323981 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+1667335285 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>

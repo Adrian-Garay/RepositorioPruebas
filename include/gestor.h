@@ -20,6 +20,7 @@ class Gestor
 
         //funciones
         void crea_vehiculos(int nv);
+        void muestra_almacen_fabrica();
 
         //Pilas y colas
         Cola Cola_fabrica;               //Cola de la fabrica que contendra los automoviles

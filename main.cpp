@@ -39,20 +39,21 @@ int main()
         if (menu_entrada == 1){
             g.crea_vehiculos(20);
             cout<<"\n";
-
-
-
         }
+
 
         //Segunda opción
         else if (menu_entrada == 2){
             cout<<"Ha elegido la segunda opcion\n";
         }
 
+
         //Tercera opción
         else if (menu_entrada == 3){
-            cout<<"Ha elegido la tercera opción\n";
+            g.muestra_almacen_fabrica();
+            cout<<"\n";
         }
+
 
         //Cuarta opción
         else if (menu_entrada == 4){

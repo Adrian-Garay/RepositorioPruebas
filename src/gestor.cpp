@@ -25,6 +25,7 @@ void Gestor::crea_vehiculos(int nv)
     std::string numero_bastidor= "";
     std::string modelo ="";
     std::string color ="";
+    int concesionario = 0;
     string listaModelos[]={"Ford Fiesta", "Toyota Yaris", "Renault Clio", "Opel Corsa", "Seat León"};
     string listaColores[]={"Azul","Rojo","Verde","Blanco","Gris","Negro","Amarillo","Naranja"};
 
@@ -43,8 +44,27 @@ void Gestor::crea_vehiculos(int nv)
             }
         modelo=listaModelos[rand() % (5)];                          //Crea el modelo del vehiculo
         cout << endl<<"Modelo: "<<modelo<< " ";
-        color=listaColores[rand() % (8)];                          //Crea el color del vehiculo
+        color=listaColores[rand() % (8)];                          //Crea el color del vehicul
         cout << endl<<"Color: "<<color<< " ";
+        v.cargarVehiculo(numero_bastidor,modelo,color,concesionario);
+        Cola_fabrica.encolar(v);
         cout<<"\n";
+
         }
+}
+void Gestor::muestra_almacen_fabrica()
+{
+    Cola colaAux;
+    Vehiculo vAux;
+    while ((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud() > 0)) {
+        cout<<"Cola_fabrica longitud  = "+to_string(Cola_fabrica.get_longitud()) + "\n";
+        vAux=Cola_fabrica.desencolar();
+        cout<<"ES:" + vAux.verVehiculo();
+        colaAux.encolar(vAux);
+    }
+    while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 )){
+        cout<<"longitud  = "+to_string(colaAux.get_longitud()) + "\n";
+        vAux=colaAux.desencolar();
+        Cola_fabrica.encolar(vAux);
+    }
 }

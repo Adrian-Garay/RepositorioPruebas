@@ -1,5 +1,6 @@
 #include "../include/Cola.h"
 #include "../include/NodoCola.h"
+#include "vehiculo.h"
 #include <iostream>
 using namespace std;
 
@@ -9,9 +10,9 @@ Cola::Cola()
 }
 Cola::~Cola() {}
 
-void Cola::encolar( char elemento)
+void Cola::encolar( Vehiculo v)
 {   NodoCola*nuevo_nodo = new
-NodoCola (elemento);
+    NodoCola (v);
     if(es_vacia())
     {   primero = nuevo_nodo;
         ultimo = nuevo_nodo;
@@ -23,10 +24,10 @@ NodoCola (elemento);
     longitud++;
 }
 
-char Cola::desencolar()
+Vehiculo Cola::desencolar()
 {   if (!es_vacia())
     {
-    char elemento = primero-> elemento;
+    Vehiculo v = primero-> v;
     NodoCola*aux = primero;
 
     if((primero==ultimo) && (primero->siguiente == NULL))
@@ -43,23 +44,23 @@ char Cola::desencolar()
         delete(aux);
     }
     longitud--;
-    return elemento;
+    return v;
     }
 }
 
-char Cola::inicio()
+Vehiculo Cola::inicio()
 {
     if (!es_vacia())
     {
-    return primero->elemento;
+    return primero->v;
     }
 }
 
-char Cola::fin()
+Vehiculo Cola::fin()
     {
     if (!es_vacia())
     {
-    return ultimo-> elemento;
+    return ultimo-> v;
     }
 }
 
@@ -71,7 +72,7 @@ bool Cola:: es_vacia()
 {   return ((primero == NULL) && (ultimo ==NULL));
 }
 
-void Cola:: mostrarCola()
+/*void Cola:: mostrarCola()
 //No es correcto, la cola solo puede verse mostrando el primero y desencolando, se implementa para comprobar código facilmente
 {
     NodoCola*aux =primero;
@@ -83,4 +84,4 @@ void Cola:: mostrarCola()
         aux= aux->siguiente;
         }
     }
-}
+}*/

@@ -8,9 +8,9 @@ class Vehiculo
     public:
         //metodos
         Vehiculo();
-        Vehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario);
-        void cargarVehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario);
-
+        Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
+        void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
+        std::string verVehiculo();
 
 
 

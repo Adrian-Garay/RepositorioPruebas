@@ -1,5 +1,6 @@
 #ifndef NODOCOLA_H_INCLUDED
 #define NODOCOLA_H_INCLUDED
+#include "vehiculo.h"
 #include <iostream>
 
 class NodoCola
@@ -8,10 +9,10 @@ class NodoCola
 
 private:
     NodoCola*siguiente;
-    char elemento;
+    Vehiculo v;
 public:
     NodoCola();
-    NodoCola(char e, NodoCola*sig = NULL);
+    NodoCola(Vehiculo v, NodoCola*sig = NULL);
     ~NodoCola();
 };
 

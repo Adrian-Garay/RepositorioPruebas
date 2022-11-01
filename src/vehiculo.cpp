@@ -15,21 +15,28 @@ Vehiculo::Vehiculo()
     concesionario = 0;
 }
 
-Vehiculo::Vehiculo(std::string nBastidor, std::string modelo, std::string color, int concesionario)
+Vehiculo::Vehiculo(std::string nBast, std::string mod, std::string col, int conce)
 {
-    nBastidor= nBastidor;
-    modelo= modelo;
-    color = color ;
-    concesionario = concesionario;
+    nBastidor= nBast;
+    modelo= mod;
+    color = col ;
+    concesionario = conce;
     //ctor
 }
 
-void Vehiculo::cargarVehiculo(std::string NBastidor,std::string Modelo, std::string Color, int Concesionario)
+void Vehiculo::cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce)
 {
-    nBastidor = NBastidor;
-    modelo = Modelo;
-    color = Color;
-    concesionario = Concesionario;
+    nBastidor = nBast;
+    modelo = mod;
+    color = col;
+    concesionario = conce;
+}
+
+std::string Vehiculo::verVehiculo()
+{
+    std::string numero = Vehiculo.nBastidor();
+    cout<<"El vehiculo tiene numero de bastidor: "+ nBastidor+"\n";
+    return("El vehiculo tiene numero de bastidor: "+ std::string (nBastidor) + ", modelo: "+ std::string (modelo) + ", color: "+ std::string (color) + ", concesionario: " + std::to_string(concesionario));
 }
 
 /*void vehiculo :: crearNBastidor ()
