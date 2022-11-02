@@ -71,7 +71,19 @@ int Cola::get_longitud()
 bool Cola:: es_vacia()
 {   return ((primero == NULL) && (ultimo ==NULL));
 }
+/*
+void muestraCola( struct cola q )
+{
+     struct nodo *aux;
 
+     aux = q.delante;
+
+     while( aux != NULL )
+     {
+            cout<<"   "<< aux->nro ;
+            aux = aux->sgte;
+     }
+}*/
 /*void Cola:: mostrarCola()
 //No es correcto, la cola solo puede verse mostrando el primero y desencolando, se implementa para comprobar código facilmente
 {
@@ -85,3 +97,4 @@ bool Cola:: es_vacia()
         }
     }
 }*/
+

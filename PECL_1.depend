@@ -29,43 +29,53 @@
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1666724599 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	<locale.h>
 
-1666724599 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
 	"NodoPila.h"
 
-1666724599 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
+1666720999 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
 	<iostream>
 
-1666724599 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
 	"NodoCola.h"
+	"vehiculo.h"
 
-1666724599 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
 	<iostream>
 
-1666724599 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
+	"vehiculo.h"
 	<iostream>
 
-1666724599 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
+	"vehiculo.h"
 
-1666724599 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
+1666720999 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
 	"../include/NodoPila.h"
 
-1666724599 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1666726074 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola_fabrica.cpp
+1666722474 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola_fabrica.cpp
 	"Cola_fabrica.h"
 
-1666726074 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola_fabrica.h
+1666722474 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola_fabrica.h
 
 1667342634 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
@@ -133,6 +143,31 @@
 	"../include/NodoPila.h"
 
 1667385779 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+	<string>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	"gestor.h"
+	"vehiculo.h"
+
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>

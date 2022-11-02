@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
+	"../include/NodoCola.h"
+	"vehiculo.h"
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
+	"vehiculo.h"
+	<iostream>
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
+	<string>
+
+1666720999 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
+	"../include/NodoPila.h"
+
+1666720999 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
+	<iostream>
+
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
+	<iostream>
+	"../include/Pila.h"
+	"../include/NodoPila.h"
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
+	"NodoPila.h"
+
+1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
+	"vehiculo.h"
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<string>
+	"string.h"
+
+1667431217 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+	<iostream>
+	"include\Pila.h"
+	"include/Cola.h"
+	"vehiculo.h"
+	"gestor.h"
+	<stdlib.h>
+	<time.h>
+	"string.h"
+	<locale.h>
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+	"NodoCola.h"
+	"vehiculo.h"
+
+1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+
+1667431261 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+	"../include/Cola.h"
+	"../include/NodoCola.h"
+	"vehiculo.h"
+	<iostream>
+
