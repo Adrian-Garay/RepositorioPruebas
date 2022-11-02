@@ -70,7 +70,7 @@ int main()
         //Cuarta opción
         else if (menu_entrada == 4){
             g.limpia_almacen();                     //Borra los automoviles almacenados en el almacen de la fabrica
-            cout<<"Almacen de la fabrica vaciado.\n";
+            cout<<"\n";
         }
 
 

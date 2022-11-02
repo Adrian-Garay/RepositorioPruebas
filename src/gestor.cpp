@@ -71,7 +71,13 @@ void Gestor::muestra_almacen_fabrica()
 
 void Gestor::limpia_almacen()
 {
-    while(!Cola_fabrica.es_vacia()){
-        Cola_fabrica.desencolar();
-    }
+    if (Cola_fabrica.es_vacia()){
+        cout<<"Cola de fabrica vacía. \n";
+        }
+    else{
+            while(!Cola_fabrica.es_vacia()){
+            Cola_fabrica.desencolar();
+            }
+            cout<<"Almacen de la fabrica vaciado.\n";
+        }
 }
