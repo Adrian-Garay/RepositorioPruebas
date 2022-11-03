@@ -10,6 +10,10 @@ class Vehiculo
         Vehiculo();
         Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
         void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
+        std::string devolverColor();
+        std::string devolverModelo();
+        std::string devolverNBastidor();
+        int devolverConcesionario();
         std::string verVehiculo();
 
 

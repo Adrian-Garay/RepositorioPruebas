@@ -73,6 +73,11 @@ void Gestor::muestra_almacen_fabrica()
     {vAux = Cola_fabrica.desencolar();
         cout<<vAux.verVehiculo();
         colaAux.encolar(vAux);
+        cout<<"\n";
+    }
+    while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 )){
+        vAux=colaAux.desencolar();
+        Cola_fabrica.encolar(vAux);
     }
 }
 

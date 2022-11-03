@@ -2,6 +2,7 @@
 #include "../include/NodoCola.h"
 #include "vehiculo.h"
 #include <iostream>
+
 using namespace std;
 
 Cola::Cola()

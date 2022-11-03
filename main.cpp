@@ -4,6 +4,7 @@
 #include "vehiculo.h"
 #include "gestor.h"
 #include <stdlib.h>
+#include <string>
 #include <time.h>
 #include "string.h"
 #include <locale.h>
