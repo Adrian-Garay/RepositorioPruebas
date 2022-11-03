@@ -64,5 +64,5 @@ std::string Vehiculo::verVehiculo()
      cout<<"El vehiculo tiene color: "+ color+"\n";
      cout<<"El vehiculo tiene concesionario: "+ std::to_string(concesionario)+"\n";
      */
-return( "El vehiculo tiene número de bastidor: " + devolverNBastidor() + ", modelo: " + devolverModelo() + ", color: "+ devolverColor + ", concesionario: " + devolverConcesionario + "\n" );
+return( "El vehiculo tiene número de bastidor: " + devolverNBastidor() + ", modelo: " + devolverModelo() + ", color: "+ devolverColor() + ", concesionario: " +  std::to_string(devolverConcesionario())+" " + "\n" );
 }

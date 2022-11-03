@@ -69,6 +69,7 @@ void Gestor::muestra_almacen_fabrica()
     */
     Cola colaAux;
     Vehiculo vAux;
+
     while((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud()) > 0)
     {vAux = Cola_fabrica.desencolar();
         cout<<vAux.verVehiculo();

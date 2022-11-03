@@ -7,7 +7,7 @@
 	"vehiculo.h"
 	<iostream>
 
-1667433633 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
+1667473175 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
 	<string>
 
 1666720999 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
@@ -24,7 +24,7 @@
 1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
 	"NodoPila.h"
 
-1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
+1667472995 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
@@ -59,7 +59,7 @@
 	"vehiculo.h"
 	<iostream>
 
-1667432080 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+1667472863 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
