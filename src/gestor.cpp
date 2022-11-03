@@ -51,8 +51,9 @@ void Gestor::crea_vehiculos(int nv)
         //cout << endl<<"Modelo: "<<modelo<< " ";
         //color=listaColores[rand() % (8)];                          //Crea el color del vehicul
         //cout << endl<<"Color: "<<color<< " ";
-        vehiculos_cola.Vehiculo_aleatorio();
-        Cola_fabrica.encolar(vehiculos_cola);
+        //vehiculos_cola.Vehiculo_aleatorio();
+        cout<<"Vehiculo aleatorio número "<< i <<"\n";
+        Cola_fabrica.encolar(Vehiculo());
         cout<<"\n";
 
     }

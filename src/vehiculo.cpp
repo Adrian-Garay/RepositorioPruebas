@@ -9,19 +9,6 @@ using namespace std;
 //Constructor para inicualizar los atributos
 Vehiculo::Vehiculo()
 {
-    nBastidor= "";
-    modelo= "";
-    color = "";
-    concesionario = 0;
-}
-
-Vehiculo::~Vehiculo()
-{
-    //dtor
-}
-
-Vehiculo::Vehiculo_aleatorio()
-{
     int num;
     srand(time(NULL)); //SOLO UNA VEZ EN TODO EL CÓDIGO, INICIALIZA RAND
     string listaModelos[]= {"Ford Fiesta", "Toyota Yaris", "Renault Clio", "Opel Corsa", "Seat León"};
@@ -45,6 +32,13 @@ Vehiculo::Vehiculo_aleatorio()
         color=listaColores[rand() % (8)];
         cout << endl<<"Color: "<<color<< " ";
 }
+
+Vehiculo::~Vehiculo()
+{
+    //dtor
+}
+
+
 
 /*Vehiculo::Vehiculo(std::string nBast, std::string mod, std::string col, int conce)
 {

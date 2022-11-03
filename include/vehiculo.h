@@ -10,7 +10,7 @@ class Vehiculo
         Vehiculo();
         ~Vehiculo();
         //Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
-        Vehiculo_aleatorio();
+        //Vehiculo_aleatorio();
         void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
         std::string devolverColor();
         std::string devolverModelo();
