@@ -8,7 +8,9 @@ class Vehiculo
     public:
         //metodos
         Vehiculo();
-        Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
+        ~Vehiculo();
+        //Vehiculo(std::string nBast,std::string mod, std::string col, int conce);
+        Vehiculo_aleatorio();
         void cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce);
         std::string devolverColor();
         std::string devolverModelo();

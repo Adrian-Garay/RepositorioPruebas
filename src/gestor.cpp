@@ -5,6 +5,8 @@
 #include "string.h"
 #include "gestor.h"
 #include "vehiculo.h"
+#include <time.h> // es necesario incluirla
+
 using namespace std;
 
 Gestor::Gestor()
@@ -20,18 +22,18 @@ Gestor::~Gestor()
 void Gestor::crea_vehiculos(int nv)
 {
     Vehiculo vehiculos_cola;
-    int num;
-    srand(time(NULL)); //SOLO UNA VEZ EN TODO EL CÓDIGO, INICIALIZA RAND
-    std::string numero_bastidor= "";
-    std::string modelo ="";
-    std::string color ="";
-    int concesionario = 0;
-    string listaModelos[]= {"Ford Fiesta", "Toyota Yaris", "Renault Clio", "Opel Corsa", "Seat León"};
-    string listaColores[]= {"Azul","Rojo","Verde","Blanco","Gris","Negro","Amarillo","Naranja"};
+    //int num;
+    //srand(time(NULL)); //SOLO UNA VEZ EN TODO EL CÓDIGO, INICIALIZA RAND
+    //std::string numero_bastidor= "";
+    //std::string modelo ="";
+    //std::string color ="";
+    //int concesionario = 0;
+    //string listaModelos[]= {"Ford Fiesta", "Toyota Yaris", "Renault Clio", "Opel Corsa", "Seat León"};
+    //string listaColores[]= {"Azul","Rojo","Verde","Blanco","Gris","Negro","Amarillo","Naranja"};
 
     for (int i=0; i<nv; i++)                                       //Crea el numero de bastidor
     {
-        cout<<"Vehiculo aleatorio número ";
+        /*cout<<"Vehiculo aleatorio número ";
         for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios
         {
             num = 1 + rand() % (9); //GENERA ALEATORIOS ENTRE 0 Y 9
@@ -44,12 +46,12 @@ void Gestor::crea_vehiculos(int nv)
             num = 1 + rand() % (27 - 1);
             cout << letras[num-1]<< "";
             numero_bastidor=numero_bastidor+letras[num-1];   //Convierte str a string
-        }
-        modelo=listaModelos[rand() % (5)];                          //Crea el modelo del vehiculo
-        cout << endl<<"Modelo: "<<modelo<< " ";
-        color=listaColores[rand() % (8)];                          //Crea el color del vehicul
-        cout << endl<<"Color: "<<color<< " ";
-        vehiculos_cola.cargarVehiculo(numero_bastidor,modelo,color,concesionario);
+        }*/
+        //modelo=listaModelos[rand() % (5)];                          //Crea el modelo del vehiculo
+        //cout << endl<<"Modelo: "<<modelo<< " ";
+        //color=listaColores[rand() % (8)];                          //Crea el color del vehicul
+        //cout << endl<<"Color: "<<color<< " ";
+        vehiculos_cola.Vehiculo_aleatorio();
         Cola_fabrica.encolar(vehiculos_cola);
         cout<<"\n";
 

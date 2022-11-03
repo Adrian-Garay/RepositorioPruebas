@@ -68,7 +68,7 @@
 	"gestor.h"
 	"vehiculo.h"
 
-1667474052 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1667498858 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -86,7 +86,7 @@
 1666718983 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
 	<iostream>
 
-1667478877 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+1667498858 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
@@ -94,21 +94,21 @@
 	"vehiculo.h"
 	<iostream>
 
-1667478877 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+1667501130 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1667475677 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1667500663 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 
-1667478877 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+1667498858 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	<iostream>
 
-1667478877 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1667501562 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -116,6 +116,7 @@
 	"string.h"
 	"gestor.h"
 	"vehiculo.h"
+	<time.h>
 
 1667342634 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
