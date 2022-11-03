@@ -26,10 +26,10 @@ Vehiculo::Vehiculo(std::string nBast, std::string mod, std::string col, int conc
 
 void Vehiculo::cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce)
 {
-    nBastidor = nBast;
-    modelo = mod;
-    color = col;
-    concesionario = conce;
+    std::string nBastidor = nBast;
+    std::string modelo = mod;
+    std::string color = col;
+    int concesionario = conce;
 }
 /*
 std::string Vehiculo::DevColor(){
