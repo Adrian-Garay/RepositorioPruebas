@@ -13,7 +13,7 @@ Cola::Cola()
 }
 Cola::~Cola() {}
 
-void Cola::encolar( Vehiculo v)
+void Cola::encolar(Vehiculo v)
 {
     NodoCola*nuevo_nodo = new
     NodoCola (v);
@@ -80,55 +80,24 @@ bool Cola:: es_vacia()
 {
     return ((primero == NULL) && (ultimo ==NULL));
 }
-/*
-void muestraCola( struct cola q )
-{
-     struct nodo *aux;
 
-     aux = q.delante;
-
-     while( aux != NULL )
-     {
-            cout<<"   "<< aux->nro ;
-            aux = aux->sgte;
-     }
-}*/
-/*void Cola:: mostrarCola()
-//No es correcto, la cola solo puede verse mostrando el primero y desencolando, se implementa para comprobar código facilmente
-{
-    NodoCola*aux =primero;
-    if (es_vacia ()) {cout <<"Cola Vacía: "<<endl;}
-    else{
-        cout<<"Datos de la Cola: "<<endl;
-    while(aux){
-        cout<< aux->elemento<<endl;
-        aux= aux->siguiente;
-        }
-    }
-}*/
 void Cola::mostrarCola()
 {
     NodoCola *aux = primero;
     if (es_vacia())
     {
-        cout<<"Cola Vacía: "<<endl;
+        cout<<"Cola Vacía "<<endl;
     }
     else
     {
-       /* cout<<"Datos de la Cola: "<<endl;
-        while (aux)
-        {
-            cout << aux->v<<endl;
-            aux = aux->siguiente;
-        }*/
         for(int i=0; i<longitud; i++)
         {
-            cout<<i+1<<endl;
+            cout<<"Vehiculo "<<i+1<<": "<<endl;
             cout<<aux->v.verVehiculo()<<endl;
-            cout<<aux->v.devolverNBastidor()<<endl;
-            cout<<aux->v.devolverModelo()<<endl;
-            cout<<aux->v.devolverColor()<<endl;
-            cout<<aux->v.devolverConcesionario()<<endl;
+            //cout<<aux->v.devolverNBastidor()<<endl;
+            //cout<<aux->v.devolverModelo()<<endl;
+            //cout<<aux->v.devolverColor()<<endl;
+            //cout<<aux->v.devolverConcesionario()<<endl;
             aux=aux->siguiente;
         }
 
