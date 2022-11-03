@@ -32,7 +32,7 @@
 	<string>
 	"string.h"
 
-1667434408 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+1667475001 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -44,7 +44,7 @@
 	"string.h"
 	<locale.h>
 
-1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+1667475056 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
@@ -53,13 +53,13 @@
 	"Pila.h"
 	"Cola.h"
 
-1667434410 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+1667495584 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	<iostream>
 
-1667472863 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+1667495783 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>

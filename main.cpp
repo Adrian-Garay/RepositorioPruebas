@@ -63,7 +63,8 @@ int main()
 
         //Tercera opción
         else if (menu_entrada == 3){
-            g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
+
+            //g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
         }
 

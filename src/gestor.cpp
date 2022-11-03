@@ -56,50 +56,69 @@ void Gestor::crea_vehiculos(int nv)
     }
 }
 void Gestor::muestra_almacen_fabrica()
-{   /*
-    (!CliNoReg.es_vacia()) && (CliNoReg.get_longitud() > 0
 
-    Cola colaAux;
-    Vehiculo vAux;
-    while(Cola_fabrica.es_vacia()!= NULL)
-    {vAux = Cola_fabrica.desencolar();
-        cout<<vAux.verVehiculo());
-        colaAux.encolar(vAux);
-    }
-    */
+{
+    Cola_fabrica.mostrarCola();
     Cola colaAux;
     Vehiculo vAux;
 
     while((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud()) > 0)
-    {vAux = Cola_fabrica.desencolar();
+    {
+        vAux = Cola_fabrica.desencolar();
         cout<<vAux.verVehiculo();
         colaAux.encolar(vAux);
         cout<<"\n";
     }
-    while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 )){
+    while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 ))
+    {
         vAux=colaAux.desencolar();
         Cola_fabrica.encolar(vAux);
     }
 }
+/*
+(!CliNoReg.es_vacia()) && (CliNoReg.get_longitud() > 0
 
+Cola colaAux;
+Vehiculo vAux;
+while(Cola_fabrica.es_vacia()!= NULL)
+{vAux = Cola_fabrica.desencolar();
+   cout<<vAux.verVehiculo());
+   colaAux.encolar(vAux);
+}
+*/
+/*Cola colaAux;
+Vehiculo vAux;
 
-    /*
-    Cola colaAux;
-    Vehiculo vAux;
+while((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud()) > 0)
+{vAux = Cola_fabrica.desencolar();
+    cout<<vAux.verVehiculo();
+    colaAux.encolar(vAux);
+    cout<<"\n";
+}
+while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 )){
+    vAux=colaAux.desencolar();
+    Cola_fabrica.encolar(vAux);
+}
+}
+
+*/
+/*
+Cola colaAux;
+Vehiculo vAux;
+cout<<"Cola_fabrica longitud  = "+to_string(Cola_fabrica.get_longitud()) + "\n";
+while ((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud() > 0))
+{
     cout<<"Cola_fabrica longitud  = "+to_string(Cola_fabrica.get_longitud()) + "\n";
-    while ((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud() > 0))
-    {
-        cout<<"Cola_fabrica longitud  = "+to_string(Cola_fabrica.get_longitud()) + "\n";
-        vAux=Cola_fabrica.desencolar();
-        cout<<"ES:" + vAux.verVehiculo();
-        colaAux.encolar(vAux);
-    }
-    while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 ))
-    {
-        cout<<"longitud  = "+to_string(colaAux.get_longitud()) + "\n";
-        vAux=colaAux.desencolar();
-        Cola_fabrica.encolar(vAux);
-    }
+    vAux=Cola_fabrica.desencolar();
+    cout<<"ES:" + vAux.verVehiculo();
+    colaAux.encolar(vAux);
+}
+while ((!colaAux.es_vacia()) && (colaAux.get_longitud() > 0 ))
+{
+    cout<<"longitud  = "+to_string(colaAux.get_longitud()) + "\n";
+    vAux=colaAux.desencolar();
+    Cola_fabrica.encolar(vAux);
+}
 }
 */
 void Gestor::limpia_almacen()
@@ -117,3 +136,4 @@ void Gestor::limpia_almacen()
         cout<<"Almacen de la fabrica vaciado.\n";
     }
 }
+
