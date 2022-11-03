@@ -58,8 +58,8 @@ void Gestor::crea_vehiculos(int nv)
 void Gestor::muestra_almacen_fabrica()
 
 {
-    Cola_fabrica.mostrarCola();
-    Cola colaAux;
+    Cola_fabrica.mostrarCola();}
+    /*Cola colaAux;
     Vehiculo vAux;
 
     while((!Cola_fabrica.es_vacia()) && (Cola_fabrica.get_longitud()) > 0)
@@ -74,7 +74,7 @@ void Gestor::muestra_almacen_fabrica()
         vAux=colaAux.desencolar();
         Cola_fabrica.encolar(vAux);
     }
-}
+}*/
 /*
 (!CliNoReg.es_vacia()) && (CliNoReg.get_longitud() > 0
 
