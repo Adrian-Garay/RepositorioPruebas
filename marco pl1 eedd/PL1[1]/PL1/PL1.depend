@@ -1,0 +1,219 @@
+# depslib dependency file v1.0
+1666440781 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\empresa.cpp
+	"Empresa.h"
+
+1666440781 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\empresa.h
+
+1666609705 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\nodopila.cpp
+	"NodoPila.h"
+	<string>
+
+1666541796 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\nodopila.h
+	<iostream>
+	<string>
+
+1666609639 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\pila.cpp
+	"Pila.h"
+
+1666542130 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\pila.h
+	"NodoPila.h"
+	<string>
+
+1666609678 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\nodocola.cpp
+	"NodoCola.h"
+
+1666597273 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\nodocola.h
+	<iostream>
+	<Automovil.h>
+
+1666683798 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\main.cpp
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"Automovil.h"
+	<cstdlib>
+	<ctime>
+	"Gestor.h"
+
+1666599433 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\automovil.h
+	<string>
+
+1666671931 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\automovil.cpp
+	"Automovil.h"
+	"Pila.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+
+1666616333 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\cola.cpp
+	"Cola.h"
+	<iostream>
+	<Automovil.h>
+
+1666616128 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\cola.h
+	"NodoCola.h"
+	"Automovil.h"
+
+1666674448 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\gestor.cpp
+	"Gestor.h"
+	<Cola.h>
+	<Automovil.h>
+	<cstdlib>
+	<ctime>
+
+1666672893 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\gestor.h
+	"Zona.h"
+	"Cola.h"
+
+1666672429 source:c:\users\lasol\desktop\uni\estructuras de datos\pl1\src\zona.cpp
+	"Zona.h"
+
+1666672253 c:\users\lasol\desktop\uni\estructuras de datos\pl1\include\zona.h
+	"Pila.h"
+	"Cola.h"
+
+1666869216 source:c:\users\marco\desktop\pl1\main.cpp
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"Automovil.h"
+	<cstdlib>
+	<ctime>
+	"Gestor.h"
+
+1666542132 c:\users\marco\desktop\pl1\include\pila.h
+	"NodoPila.h"
+	<string>
+
+1666541798 c:\users\marco\desktop\pl1\include\nodopila.h
+	<iostream>
+	<string>
+
+1666616130 c:\users\marco\desktop\pl1\include\cola.h
+	"NodoCola.h"
+	"Automovil.h"
+
+1666597274 c:\users\marco\desktop\pl1\include\nodocola.h
+	<iostream>
+	<Automovil.h>
+
+1666599434 c:\users\marco\desktop\pl1\include\automovil.h
+	<string>
+
+1666868318 c:\users\marco\desktop\pl1\include\gestor.h
+	"Zona.h"
+	"Cola.h"
+
+1666672254 c:\users\marco\desktop\pl1\include\zona.h
+	"Pila.h"
+	"Cola.h"
+
+1666671932 source:c:\users\marco\desktop\pl1\src\automovil.cpp
+	"Automovil.h"
+	"Pila.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+
+1666869054 source:c:\users\marco\desktop\pl1\src\cola.cpp
+	"Cola.h"
+	<iostream>
+	<Automovil.h>
+
+1666868667 source:c:\users\marco\desktop\pl1\src\gestor.cpp
+	"Gestor.h"
+	<Cola.h>
+	<Automovil.h>
+	<cstdlib>
+	<ctime>
+
+1666609680 source:c:\users\marco\desktop\pl1\src\nodocola.cpp
+	"NodoCola.h"
+
+1666609706 source:c:\users\marco\desktop\pl1\src\nodopila.cpp
+	"NodoPila.h"
+	<string>
+
+1666609640 source:c:\users\marco\desktop\pl1\src\pila.cpp
+	"Pila.h"
+
+1666672430 source:c:\users\marco\desktop\pl1\src\zona.cpp
+	"Zona.h"
+
+1666668332 source:c:\users\lasol\desktop\pl1\src\automovil.cpp
+	"Automovil.h"
+	"Pila.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+
+1666595834 c:\users\lasol\desktop\pl1\include\automovil.h
+	<string>
+
+1666964523 c:\users\lasol\desktop\pl1\include\pila.h
+	"NodoPila.h"
+	<string>
+	"Automovil.h"
+
+1666964921 c:\users\lasol\desktop\pl1\include\nodopila.h
+	<iostream>
+	<string>
+	"Automovil.h"
+
+1666865454 source:c:\users\lasol\desktop\pl1\src\cola.cpp
+	"Cola.h"
+	<iostream>
+	<Automovil.h>
+
+1666612530 c:\users\lasol\desktop\pl1\include\cola.h
+	"NodoCola.h"
+	"Automovil.h"
+
+1666593674 c:\users\lasol\desktop\pl1\include\nodocola.h
+	<iostream>
+	<Automovil.h>
+
+1666606080 source:c:\users\lasol\desktop\pl1\src\nodocola.cpp
+	"NodoCola.h"
+
+1666964759 source:c:\users\lasol\desktop\pl1\src\nodopila.cpp
+	"NodoPila.h"
+	<string>
+	"Automovil.h"
+
+1666964539 source:c:\users\lasol\desktop\pl1\src\pila.cpp
+	"Pila.h"
+	"Automovil.h"
+
+1666964548 source:c:\users\lasol\desktop\pl1\src\zona.cpp
+	"Zona.h"
+	"Automovil.h"
+
+1666875702 c:\users\lasol\desktop\pl1\include\zona.h
+	"Pila.h"
+	"Cola.h"
+	"Automovil.h"
+
+1666964303 source:c:\users\lasol\desktop\pl1\src\gestor.cpp
+	"Gestor.h"
+	<Cola.h>
+	"Automovil.h"
+	<cstdlib>
+	<ctime>
+
+1666873682 c:\users\lasol\desktop\pl1\include\gestor.h
+	"Zona.h"
+	"Cola.h"
+
+1666879739 source:c:\users\lasol\desktop\pl1\main.cpp
+	<iostream>
+	"Pila.h"
+	"Cola.h"
+	"Automovil.h"
+	<cstdlib>
+	<ctime>
+	"Gestor.h"
+
