@@ -105,7 +105,7 @@
 	"Pila.h"
 	"Cola.h"
 
-1667579090 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+1667591442 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
@@ -135,7 +135,7 @@
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1667578994 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+1667590548 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>

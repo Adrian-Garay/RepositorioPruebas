@@ -14,7 +14,7 @@ Vehiculo::Vehiculo()
 
     string listaModelos[]= {"Ford Fiesta", "Toyota Yaris", "Renault Clio", "Opel Corsa", "Seat León"};
     string listaColores[]= {"Azul","Rojo","Verde","Blanco","Gris","Negro","Amarillo","Naranja"};
-
+    //std::string nBastidor = "";
     for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios
     {
         num = 1 + rand() % (9); //GENERA ALEATORIOS ENTRE 0 Y 9
