@@ -20,11 +20,13 @@ int main()
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
     int nv;
+    int ns;
 
     Gestor g;
 
     //Opciones del menú
-    while(bucle){
+    while(bucle)
+    {
         cout<<"Indique la operación que desea realizar:\n";
         cout<<"1 -> Generar aleatoriamente la cola de automóviles disponibles en la fábrica con NV automóviles.\n";
         cout<<"2 -> Generar aleatoriamente la cola de automóviles disponibles en la fábrica solicitando NV por pantalla.\n";
@@ -38,28 +40,31 @@ int main()
         cin>>menu_entrada;
 
         //Primera opción
-        if (menu_entrada == 1){
+        if (menu_entrada == 1)
+        {
             g.crea_vehiculos(20);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
         }
 
 
         //Segunda opción
-        else if (menu_entrada == 2){                //genera nv vehículos y los mete en el almacen de la fabrica
+        else if (menu_entrada == 2)                 //genera nv vehículos y los mete en el almacen de la fabrica
+        {
             cout<<"Indique cuantos vehículos quiere generar: \n";
             cin>>nv;
             while((nv<10)||(nv>30))
-                {
-                    cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
-                    cin>>nv;
-                }
+            {
+                cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
+                cin>>nv;
+            }
             g.crea_vehiculos(nv);
         }
 
 
 
         //Tercera opción
-        else if (menu_entrada == 3){
+        else if (menu_entrada == 3)
+        {
 
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
@@ -67,7 +72,8 @@ int main()
 
 
         //Cuarta opción
-        else if (menu_entrada == 4){
+        else if (menu_entrada == 4)
+        {
             g.limpia_almacen();                     //Borra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
         }
@@ -76,71 +82,84 @@ int main()
 
 
         //Quinta opción
-        else if (menu_entrada == 5){
-            cout<<"Ha elegido la quinta opción\n";
+        else if (menu_entrada == 5)
+        {
+            cout<<"Indique cuantos vehículos quiere eliminar: \n";
+            cin>>ns;
+            while((ns<2)||(ns>10))
+            {
+                cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
+                cin>>ns;
+            }
+            g.eliminarVehiculos();
         }
 
         //Sexta opción
-        else if (menu_entrada == 6){
+        else if (menu_entrada == 6)
+        {
             cout<<"Ha elegido la sexta opción\n";
         }
 
         //Septima opción
-        else if (menu_entrada == 7){
+        else if (menu_entrada == 7)
+        {
             cout<<"Ha elegido la séptima opción\n";
         }
 
         //Octava opción
-        else if (menu_entrada == 8){
+        else if (menu_entrada == 8)
+        {
             cout<<"Ha elegido la octava opción\n";
         }
 
         //Salir del programa
-        else if (menu_entrada == 0){
+        else if (menu_entrada == 0)
+        {
             bucle=false;
         }
 
         //Texto error
-        else{
-                cout<<error<<"\n";
+        else
+        {
+            cout<<error<<"\n";
         }
     }
 
 
 
     //Ejercicio 1 Pilas
-	/*cout << " " << endl;
+    /*cout << " " << endl;
     cout << "Ejercicio 1 " << endl;
-	cout << "Creamos la pila Vacía" << endl;
-	Pila p1; p1.mostrar();
-	cout << "Apilo 0" << endl;
-	p1.apilar(0); p1.mostrar();
-	cout << "Apilo 1" << endl;
-	p1.apilar(1); p1.mostrar();
-	cout << "Apilo 2" << endl;
-	p1.apilar(2); p1.mostrar();
-	cout << "Cuento la pila" << endl;
-	cout << p1.contar() << endl;*/
+    cout << "Creamos la pila Vacía" << endl;
+    Pila p1; p1.mostrar();
+    cout << "Apilo 0" << endl;
+    p1.apilar(0); p1.mostrar();
+    cout << "Apilo 1" << endl;
+    p1.apilar(1); p1.mostrar();
+    cout << "Apilo 2" << endl;
+    p1.apilar(2); p1.mostrar();
+    cout << "Cuento la pila" << endl;
+    cout << p1.contar() << endl;*/
 
-	//Ejercicio 2 Pilas
-	/*cout << "Muestro el fondo" << endl;
-	cout << p1.fondo() << endl;*/
+    //Ejercicio 2 Pilas
+    /*cout << "Muestro el fondo" << endl;
+    cout << p1.fondo() << endl;*/
 
-	//Ejercicio 3 Pilas
-	/*cout << " " << endl;
+    //Ejercicio 3 Pilas
+    /*cout << " " << endl;
     cout << "Ejercicio 3 " << endl;
     cout << "Creamos la pila 2 Vacía" << endl;
-	Pila p2; p2.mostrar();
-	cout << "Apilo 0" << endl;
-	p2.apilar(8); p2.mostrar();
-	cout << "Apilo 1" << endl;
-	p2.apilar(74); p2.mostrar();
-	cout << p1.contar() << endl;
+    Pila p2; p2.mostrar();
+    cout << "Apilo 0" << endl;
+    p2.apilar(8); p2.mostrar();
+    cout << "Apilo 1" << endl;
+    p2.apilar(74); p2.mostrar();
+    cout << p1.contar() << endl;
     cout << p2.contar() << endl;
     cout << "Montamos las dos pilas" << endl;
     p2.montar(p1, p2);
     cout << "Cuento la pila 1 " << endl;
-	cout << p1.contar() << endl;
+    cout << p1.contar() << endl;
     cout << p2.contar() << endl;*/
 
     //Ejercicio4 Pilas
@@ -154,19 +173,19 @@ int main()
     cout << "Ejercicio 5 " << endl;
 
     cout << "Creamos la pila Vacía" << endl;
-	Pila p3; p3.mostrar();
-	cout << "Apilo 0" << endl;
-	p3.apilar(0); p3.mostrar();
-	cout << "Apilo 1" << endl;
-	p3.apilar(1); p3.mostrar();
-	cout << "Apilo 2" << endl;
-	p3.apilar(2); p3.mostrar();
+    Pila p3; p3.mostrar();
+    cout << "Apilo 0" << endl;
+    p3.apilar(0); p3.mostrar();
+    cout << "Apilo 1" << endl;
+    p3.apilar(1); p3.mostrar();
+    cout << "Apilo 2" << endl;
+    p3.apilar(2); p3.mostrar();
     //p3.inversa(); No funciona, nesetiraria una cola para volverla a sacar
     p3.mostrar();*/
 
-	//cout << "Desapilo " << endl;
-	//p1.desapilar();	p1.mostrar();
-	//	p1.~Pila(); //es innecesario, se va a llamar al destructor al salir de la ejecución
+    //cout << "Desapilo " << endl;
+    //p1.desapilar();	p1.mostrar();
+    //	p1.~Pila(); //es innecesario, se va a llamar al destructor al salir de la ejecución
 
     /*
     cout << "Creamos la cola Vacía" << endl;
@@ -185,6 +204,6 @@ int main()
     cout<< "Longitud Cola: " << c.get_longitud()<<endl;
     c.~Cola();*/
 
-	return 0;
+    return 0;
 }
 

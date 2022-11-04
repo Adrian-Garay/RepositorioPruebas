@@ -24,7 +24,7 @@
 1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
 	"NodoPila.h"
 
-1667556789 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
+1667595276 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
@@ -32,7 +32,7 @@
 	<string>
 	"string.h"
 
-1667556789 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+1667598088 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -44,23 +44,23 @@
 	"string.h"
 	<locale.h>
 
-1667475056 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+1667597289 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
-1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
+1667598146 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 
-1667559227 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+1667597289 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1667559371 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+1667596838 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>

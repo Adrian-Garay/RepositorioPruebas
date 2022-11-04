@@ -17,6 +17,7 @@ public:
     Vehiculo fin();
     int get_longitud();
     Vehiculo desencolar();
+    void VerCima();
     bool es_vacia();
     void mostrarCola();
     //void mostrarCola (); //No es correcto, se implementa para ver que está creada correctamente

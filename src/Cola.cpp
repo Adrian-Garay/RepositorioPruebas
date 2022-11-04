@@ -93,21 +93,42 @@ void Cola::mostrarCola()
     {
         //while ((!es_vacia()) && (get_longitud() > 0))
         //{
-    cout<<"Cola fabrica longitud  = "+to_string(get_longitud()) + "\n";
-    for(int i=0; i<longitud; i++)
+        cout<<"Cola fabrica longitud  = "+to_string(get_longitud()) + "\n";
+        for(int i=0; i<longitud; i++)
         {
 
 
-        cout<<"\n";
-        cout<<"-------";
-        cout<<"Coche número: "<<i+1<<endl;
-        cout <<aux->v.verVehiculo()<<endl;
-                /*cout<<aux->v.devolverNBastidor()<<endl;
-                cout<<aux->v.devolverModelo()<<endl;
-                cout<<aux->v.devolverColor()<<endl;
-                cout<<aux->v.devolverConcesionario()<<endl;*/
+            cout<<"\n";
+            cout<<"-------";
+            cout<<"Coche número: "<<i+1<<endl;
+            cout <<aux->v.verVehiculo()<<endl;
+            /*cout<<aux->v.devolverNBastidor()<<endl;
+            cout<<aux->v.devolverModelo()<<endl;
+            cout<<aux->v.devolverColor()<<endl;
+            cout<<aux->v.devolverConcesionario()<<endl;*/
 
-        aux=aux->siguiente;}
+            aux=aux->siguiente;
         }
-        //}
+    }
+    //}
+}
+
+void Cola::VerCima()
+{
+    NodoCola *aux = primero;
+    if (es_vacia())
+    {
+        cout<<"Cola Vacía "<<endl;
+    }
+    else
+
+    {
+        for(int i=0; i<longitud; i++)
+        {
+
+            cout <<aux->v.verVehiculo()<<endl;
+            aux=aux->siguiente;
+        }
+
+    }
 }
