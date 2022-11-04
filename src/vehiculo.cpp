@@ -18,39 +18,28 @@ Vehiculo::Vehiculo()
     for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios
     {
         num = 1 + rand() % (9); //GENERA ALEATORIOS ENTRE 0 Y 9
-        cout << num<< "";
+        //cout << num<< "";
         nBastidor=nBastidor + std::to_string(num); //convierte int a string
     }
     for (int i=0; i<=2; i++)                                //Crea las  letras aleatorias
     {
         char letras[]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         num = 1 + rand() % (27 - 1);
-        cout << letras[num-1]<< "";
+        //cout << letras[num-1]<< "";
         nBastidor=nBastidor+letras[num-1];   //Convierte str a string
     }
     modelo=listaModelos[rand() % (5)];
-    cout << endl<<"Modelo: "<<modelo<< " ";
+    //cout << endl<<"Modelo: "<<modelo<< " ";
     color=listaColores[rand() % (8)];
-    cout << endl<<"Color: "<<color<< " ";
+    //cout << endl<<"Color: "<<color<< " ";
     concesionario=0;
-    cout << endl<<"Concesionario: "<<concesionario<< "\n";
+    //cout << endl<<"Concesionario: "<<concesionario<< "\n";
 }
 
 Vehiculo::~Vehiculo()
 {
     //dtor
 }
-
-
-
-/*Vehiculo::Vehiculo(std::string nBast, std::string mod, std::string col, int conce)
-{
-    nBastidor= nBast;
-    modelo= mod;
-    color = col ;
-    concesionario = conce;
-    //ctor
-}*/
 
 void Vehiculo::cargarVehiculo(std::string nBast,std::string mod, std::string col, int conce)
 {
