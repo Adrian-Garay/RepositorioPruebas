@@ -25,7 +25,7 @@ void Gestor::crea_vehiculos(int nv)
     //Vehiculo vehiculos_cola;
     for (int i=0; i<nv; i++)                                       //Crea el numero de bastidor
     {
-        cout<<"Vehiculo aleatorio número "<< i <<"\n";
+        cout<<"Vehiculo aleatorio número "<< i+1 <<"\n";
         Cola_fabrica.encolar(Vehiculo());
         cout<<"\n";
 

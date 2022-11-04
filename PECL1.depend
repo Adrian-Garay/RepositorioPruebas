@@ -53,13 +53,14 @@
 	"Pila.h"
 	"Cola.h"
 
-1667557669 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+1667559227 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
+	"Cola.h"
 	<iostream>
 
-1667558559 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+1667559371 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>

@@ -90,16 +90,22 @@ void Cola::mostrarCola()
         cout<<"Cola Vacía "<<endl;
     }
     else
-    { while ((!es_vacia()) && (get_longitud() > 0)){
-        for(int i=0; i<longitud; i++)
+    {
+        while ((!es_vacia()) && (get_longitud() > 0))
+        {
+            cout<<"Cola fabrica longitud  = "+to_string(get_longitud()) + "\n";
+            for(int i=0; i<longitud; i++)
             {
-                cout<<i+1<<endl;
+                cout<<"\n";
+                cout<<"-------";
+                cout<<"Coche número: "<<i+1<<endl;
                 cout<<aux->v.devolverNBastidor()<<endl;
                 cout<<aux->v.devolverModelo()<<endl;
                 cout<<aux->v.devolverColor()<<endl;
                 cout<<aux->v.devolverConcesionario()<<endl;
+
                 aux=aux->siguiente;
             }
-    }
+        }
     }
 }
