@@ -18,6 +18,7 @@ public:
     int get_longitud();
     Vehiculo desencolar();
     bool es_vacia();
+    void mostrarCola();
     //void mostrarCola (); //No es correcto, se implementa para ver que está creada correctamente
 };
 

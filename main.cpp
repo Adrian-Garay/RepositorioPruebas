@@ -4,6 +4,7 @@
 #include "vehiculo.h"
 #include "gestor.h"
 #include <stdlib.h>
+#include <string>
 #include <time.h>
 #include "string.h"
 #include <locale.h>
@@ -46,22 +47,20 @@ int main()
         //Segunda opción
         else if (menu_entrada == 2){                //genera nv vehículos y los mete en el almacen de la fabrica
             cout<<"Indique cuantos vehículos quiere generar: \n";
-            try {
-              cin>>nv;
-              if ((nv>10)&&(nv<30)){
-                    g.crea_vehiculos(nv);
-              } else {
-                throw (505);
-              }
-            }
-            catch (...) {
-              cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
-            }
+            cin>>nv;
+            while((nv<10)||(nv>30))
+                {
+                    cout << "Error: Debe pedir minimo 10 automoviles y como máximo 30.\n";
+                    cin>>nv;
+                }
+            g.crea_vehiculos(nv);
         }
+
 
 
         //Tercera opción
         else if (menu_entrada == 3){
+
             g.muestra_almacen_fabrica();            //Muestra los automoviles almacenados en el almacen de la fabrica
             cout<<"\n";
         }
@@ -188,3 +187,4 @@ int main()
 
 	return 0;
 }
+
