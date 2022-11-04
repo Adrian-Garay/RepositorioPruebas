@@ -1,6 +1,7 @@
 #include "../include/Cola.h"
 #include "../include/NodoCola.h"
 #include "vehiculo.h"
+#include "Cola.h"
 #include <iostream>
 
 using namespace std;
@@ -89,17 +90,16 @@ void Cola::mostrarCola()
         cout<<"Cola Vacía "<<endl;
     }
     else
-    {
+    { while ((!es_vacia()) && (get_longitud() > 0)){
         for(int i=0; i<longitud; i++)
-        {
-            cout<<"Vehiculo "<<i+1<<": "<<endl;
-            cout<<aux->v.verVehiculo()<<endl;
-            //cout<<aux->v.devolverNBastidor()<<endl;
-            //cout<<aux->v.devolverModelo()<<endl;
-            //cout<<aux->v.devolverColor()<<endl;
-            //cout<<aux->v.devolverConcesionario()<<endl;
-            aux=aux->siguiente;
-        }
-
+            {
+                cout<<i+1<<endl;
+                cout<<aux->v.devolverNBastidor()<<endl;
+                cout<<aux->v.devolverModelo()<<endl;
+                cout<<aux->v.devolverColor()<<endl;
+                cout<<aux->v.devolverConcesionario()<<endl;
+                aux=aux->siguiente;
+            }
+    }
     }
 }
