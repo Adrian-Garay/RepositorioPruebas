@@ -102,7 +102,15 @@ void Cola::MostrarZona()
 */
 void Gestor::cambioAlmacenRand(int ns)
 
-{int almacenRandom;
+{
+    int almacenRandom;
+    for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
+    {
+        almacenRandom = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
+        //cout << num<< "";
+
+    }
+
     if (Cola_fabrica.es_vacia())
     {
         cout<<"Cola de fabrica esta vacía. \n";
@@ -114,15 +122,33 @@ void Gestor::cambioAlmacenRand(int ns)
             for(int i=0; i<ns; i++)
             {
                 Cola_fabrica.desencolar();
+                if (almacenRandom ==1())
+                {
+                    Cola_zonaN.encolar();
+                    cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                }
+                else if (almacenRandom == 2())
+                {
+                    Cola_zonasS.encolar();
+                    cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                }
+                else if (almacenRandom == 3())
+                {
+                    Cola_zonaE.encolar();
+                    cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                }
+                else if (almacenRandom == 4())
+                {
+                    Cola_zonaO.encolar();
+                    cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                }
+                else
+                {
+                    cout<<error<<"\n";
+                }
             }
             cout<<"Se han eliminado "<< ns << " vehiculos \n";
-             for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
-            {
-                almacenRandom = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
-                //cout << num<< "";
 
-            }
-            cout<<"Llevados a almacen número: "<<almacenRandom<<"\n"<<"\n";
         }
 
     }
@@ -140,10 +166,32 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen)
             for(int i=0; i<ns; i++)
             {
                 Cola_fabrica.desencolar();
+                if (nAlmacen ==1())
+                {
+                    Cola_zonaN.encolar();
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else if (nAlmacen == 2())
+                {
+                    Cola_zonasS.encolar();
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else if (nAlmacen == 3())
+                {
+                    Cola_zonaE.encolar();
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else if (nAlmacen == 4())
+                {
+                    Cola_zonaO.encolar();
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                }
+                else
+                {
+                    cout<<error<<"\n";
+                }
             }
             cout<<"Se han eliminado "<< ns << " vehiculos \n";
-
-            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
         }
 
     }

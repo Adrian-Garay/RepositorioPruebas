@@ -26,7 +26,12 @@ class Gestor
         void cambioAlmacen(int ns,int nAlmacen);
 
         //Pilas y colas
-        Cola Cola_fabrica;               //Cola de la fabrica que contendra los automoviles
+        Cola Cola_fabrica; //Cola de la fabrica que contendra los automoviles
+        Cola Cola_zonaN;
+        Cola Cola_zonaS;
+        Cola Cola_zonaE;
+        Cola Cola_zonaO;
+
 
     protected:
 

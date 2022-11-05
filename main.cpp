@@ -105,9 +105,9 @@ int main()
             cin>>ns;
              cout<<"Indique el almacen de destino: \n";
             cin>>nAlmacen;
-            while((ns<2)||(ns>10))
+            while((ns<1)||(ns>10))
             {
-                cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
+                cout << "Error: Debe pedir minimo 1 automoviles y como máximo 10.\n";
                 cin>>ns;
             }
             g.cambioAlmacen(ns,nAlmacen);

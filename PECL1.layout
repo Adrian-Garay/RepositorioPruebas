@@ -7,14 +7,9 @@
 			<Cursor1 position="545" topLine="31" />
 		</Cursor>
 	</File>
-	<File name="include\Cola.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="402" topLine="12" />
-		</Cursor>
-	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3035" topLine="80" />
+			<Cursor1 position="3446" topLine="102" />
 		</Cursor>
 	</File>
 	<File name="include\vehiculo.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -22,27 +17,32 @@
 			<Cursor1 position="521" topLine="7" />
 		</Cursor>
 	</File>
-	<File name="src\Cola.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="include\Cola.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2492" topLine="119" />
+			<Cursor1 position="402" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="src\NodoCola.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Cola.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2281" topLine="116" />
+		</Cursor>
+	</File>
+	<File name="src\NodoPila.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\gestor.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2118" topLine="101" />
+			<Cursor1 position="2650" topLine="110" />
 		</Cursor>
 	</File>
 	<File name="include\gestor.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="493" topLine="18" />
+			<Cursor1 position="761" topLine="22" />
 		</Cursor>
 	</File>
-	<File name="src\NodoPila.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\NodoCola.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
