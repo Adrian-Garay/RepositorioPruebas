@@ -21,6 +21,7 @@ int main()
     string error = "Operación erronea. Vuelva a intentarlo.\n";
     int nv;
     int ns;
+    int nAlmacen;
 
     Gestor g;
 
@@ -91,13 +92,27 @@ int main()
                 cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
                 cin>>ns;
             }
-            g.eliminarVehiculos();
+            g.cambioAlmacenRand(ns);
+
         }
 
         //Sexta opción
         else if (menu_entrada == 6)
         {
             cout<<"Ha elegido la sexta opción\n";
+            {
+            cout<<"Indique cuantos vehículos quiere eliminar: \n";
+            cin>>ns;
+             cout<<"Indique el almacen de destino: \n";
+            cin>>nAlmacen;
+            while((ns<2)||(ns>10))
+            {
+                cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
+                cin>>ns;
+            }
+            g.cambioAlmacen(ns,nAlmacen);
+
+        }
         }
 
         //Septima opción

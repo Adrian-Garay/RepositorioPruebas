@@ -100,7 +100,34 @@ void Cola::MostrarZona()
     }
 }
 */
-void Gestor::eliminarVehiculos(int ns)
+void Gestor::cambioAlmacenRand(int ns)
+
+{int almacenRandom;
+    if (Cola_fabrica.es_vacia())
+    {
+        cout<<"Cola de fabrica esta vacía. \n";
+    }
+    else
+    {
+
+        {
+            for(int i=0; i<ns; i++)
+            {
+                Cola_fabrica.desencolar();
+            }
+            cout<<"Se han eliminado "<< ns << " vehiculos \n";
+             for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
+            {
+                almacenRandom = 1 + rand() % (4); //GENERA ALEATORIOS ENTRE 0 Y 4
+                //cout << num<< "";
+
+            }
+            cout<<"Llevados a almacen número: "<<almacenRandom<<"\n"<<"\n";
+        }
+
+    }
+}
+void Gestor::cambioAlmacen(int ns, int nAlmacen)
 {
     if (Cola_fabrica.es_vacia())
     {
@@ -108,13 +135,16 @@ void Gestor::eliminarVehiculos(int ns)
     }
     else
     {
-        while(!Cola_fabrica.es_vacia())
-        { for(int i=0; i<ns; i++)
+
         {
-          Cola_fabrica.desencolar();
+            for(int i=0; i<ns; i++)
+            {
+                Cola_fabrica.desencolar();
+            }
+            cout<<"Se han eliminado "<< ns << " vehiculos \n";
+
+            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
         }
 
-        }
-        cout<<"Almacen de la fabrica vaciado.\n";
     }
 }

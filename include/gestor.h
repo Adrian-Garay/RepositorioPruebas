@@ -22,7 +22,8 @@ class Gestor
         void crea_vehiculos(int nv);
         void muestra_almacen_fabrica();
         void limpia_almacen();
-        void eliminarVehiculos();
+        void cambioAlmacenRand(int ns);
+        void cambioAlmacen(int ns,int nAlmacen);
 
         //Pilas y colas
         Cola Cola_fabrica;               //Cola de la fabrica que contendra los automoviles

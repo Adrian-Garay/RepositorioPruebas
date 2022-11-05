@@ -102,10 +102,7 @@ void Cola::mostrarCola()
             cout<<"-------";
             cout<<"Coche número: "<<i+1<<endl;
             cout <<aux->v.verVehiculo()<<endl;
-            /*cout<<aux->v.devolverNBastidor()<<endl;
-            cout<<aux->v.devolverModelo()<<endl;
-            cout<<aux->v.devolverColor()<<endl;
-            cout<<aux->v.devolverConcesionario()<<endl;*/
+
 
             aux=aux->siguiente;
         }
