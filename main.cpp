@@ -87,7 +87,7 @@ int main()
         {
             cout<<"Indique cuantos vehículos quiere eliminar: \n";
             cin>>ns;
-            while((ns<3)||(ns>8))
+            if((ns<3)||(ns>8))
             {
                 cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
                 cin>>ns;
@@ -105,7 +105,7 @@ int main()
             cin>>ns;
              cout<<"Indique el almacen de destino: \n";
             cin>>nAlmacen;
-            while((ns<3)||(ns>8))
+            if((ns<3)||(ns>8))
             {
                 cout << "Error: Debe pedir minimo 1 automoviles y como máximo 10.\n";
                 cin>>ns;

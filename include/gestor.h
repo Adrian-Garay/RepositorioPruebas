@@ -16,6 +16,7 @@ class Gestor
         std::string Modelo;
         std::string Color;
         int Concesionario;
+        Vehiculo vehi;
 
 
         //funciones

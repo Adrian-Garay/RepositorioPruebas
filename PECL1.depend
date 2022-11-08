@@ -71,7 +71,7 @@
 	"Cola.h"
 	<time.h>
 
-1667591758 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1667908964 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -83,36 +83,36 @@
 	"string.h"
 	<locale.h>
 
-1667308034 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
+1667342636 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
 	"NodoPila.h"
 
-1666717874 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
+1666718984 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
 	<iostream>
 
-1667591758 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+1667906369 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
-1667332353 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+1667342636 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
 	"vehiculo.h"
 	<iostream>
 
-1667591758 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+1667502608 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1667593990 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1667908022 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 
-1667591758 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+1667906369 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1667594023 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1667908629 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -123,19 +123,19 @@
 	"Cola.h"
 	<time.h>
 
-1667332646 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
+1667342636 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
 	"vehiculo.h"
 
-1666718028 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
+1666718984 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
 	"../include/NodoPila.h"
 
-1667308146 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
+1667342636 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1667594062 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+1667594611 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>

@@ -121,31 +121,32 @@ void Gestor::cambioAlmacenRand(int ns)
         {
             for(int i=0; i<ns; i++)
             {
+                vehi = Cola_fabrica.inicio();
                 Cola_fabrica.desencolar();
-                if (almacenRandom ==1())
+                if (almacenRandom==1)
                 {
-                    Cola_zonaN.encolar();
+                    Cola_zonaN.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
-                else if (almacenRandom == 2())
+                else if (almacenRandom==2)
                 {
-                    Cola_zonasS.encolar();
+                    Cola_zonaS.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
-                else if (almacenRandom == 3())
+                else if (almacenRandom==3)
                 {
-                    Cola_zonaE.encolar();
+                    Cola_zonaE.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
-                else if (almacenRandom == 4())
+                else if (almacenRandom==4)
                 {
-                    Cola_zonaO.encolar();
+                    Cola_zonaO.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
-                else
+                /*else
                 {
                     cout<<error<<"\n";
-                }
+                }*/
             }
             cout<<"Se han eliminado "<< ns << " vehiculos \n";
 
@@ -165,33 +166,35 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen)
         {
             for(int i=0; i<ns; i++)
             {
+                vehi = Cola_fabrica.inicio();
                 Cola_fabrica.desencolar();
-                if (nAlmacen ==1())
+                if (nAlmacen==1)
                 {
-                    Cola_zonaN.encolar();
+                    Cola_zonaN.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen == 2())
+                else if (nAlmacen==2)
                 {
-                    Cola_zonasS.encolar();
+                    Cola_zonaS.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen == 3())
+                else if (nAlmacen==3)
                 {
-                    Cola_zonaE.encolar();
+                    Cola_zonaE.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen == 4())
+                else if (nAlmacen==4)
                 {
-                    Cola_zonaO.encolar();
+                    Cola_zonaO.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else
+                /*else
                 {
                     cout<<error<<"\n";
-                }
+                }*/
             }
             cout<<"Se han eliminado "<< ns << " vehiculos \n";
+
         }
 
     }
