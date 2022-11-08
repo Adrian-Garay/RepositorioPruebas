@@ -38,6 +38,7 @@
 		<Unit filename="include/NodoCola.h" />
 		<Unit filename="include/NodoPila.h" />
 		<Unit filename="include/Pila.h" />
+		<Unit filename="include/ZonaReparto.h" />
 		<Unit filename="include/gestor.h" />
 		<Unit filename="include/vehiculo.h" />
 		<Unit filename="main.cpp" />
@@ -45,6 +46,7 @@
 		<Unit filename="src/NodoCola.cpp" />
 		<Unit filename="src/NodoPila.cpp" />
 		<Unit filename="src/Pila.cpp" />
+		<Unit filename="src/ZonaReparto.cpp" />
 		<Unit filename="src/gestor.cpp" />
 		<Unit filename="src/vehiculo.cpp" />
 		<Extensions />
