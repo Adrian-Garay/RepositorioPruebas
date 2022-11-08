@@ -19,8 +19,8 @@ int main()
     int menu_entrada;
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
-    int nv;
-    int ns;
+    int nv = 20;
+    int ns = 7;
     int nAlmacen;
 
     Gestor g;
@@ -43,7 +43,7 @@ int main()
         //Primera opción
         if (menu_entrada == 1)
         {
-            g.crea_vehiculos(20);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
+            g.crea_vehiculos(nv);                   //genera una serie de vehículos y los mete en el almacen de la fabrica
             cout<<"\n";
         }
 
@@ -85,11 +85,11 @@ int main()
         //Quinta opción
         else if (menu_entrada == 5)
         {
-            cout<<"Indique cuantos vehículos quiere eliminar: \n";
-            cin>>ns;
+            //cout<<"Indique cuantos vehículos quiere eliminar: \n";
+            //cin>>ns;
             if((ns<3)||(ns>8))
             {
-                cout << "Error: Debe pedir minimo 2 automoviles y como máximo 10.\n";
+                cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
             }
             g.cambioAlmacenRand(ns);
@@ -99,20 +99,23 @@ int main()
         //Sexta opción
         else if (menu_entrada == 6)
         {
-            cout<<"Ha elegido la sexta opción\n";
-            {
             cout<<"Indique cuantos vehículos quiere eliminar: \n";
             cin>>ns;
-             cout<<"Indique el almacen de destino: \n";
-            cin>>nAlmacen;
-            if((ns<3)||(ns>8))
+            while((ns<3)||(ns>8))
             {
-                cout << "Error: Debe pedir minimo 1 automoviles y como máximo 10.\n";
+                cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
             }
+            cout<<"Indique el almacen de destino: \n";
+            cin>>nAlmacen;
+            while((nAlmacen<1)||(nAlmacen>4))
+            {
+                cout << "Error: Tiene que ser entre 1 y 4.\n";
+                cin>>nAlmacen;
+            }
+
             g.cambioAlmacen(ns,nAlmacen);
 
-        }
         }
 
         //Septima opción
