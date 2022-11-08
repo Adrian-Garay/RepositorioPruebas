@@ -19,8 +19,10 @@ int main()
     int menu_entrada;
     bool bucle=true;
     string error = "Operación erronea. Vuelva a intentarlo.\n";
-    int nv = 20;
-    int ns = 7;
+    int nv = 20;    //Numero de coches creados
+    int ns = 7;     //Numero de Coches movidos
+    int nc = 5;     //Numero posible concesionarios
+    int np = 10     //Capacidad maxima de los camiones
     int nAlmacen;
 
     Gestor g;

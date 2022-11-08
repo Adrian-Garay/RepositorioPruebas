@@ -3,6 +3,7 @@
 #define GESTOR_H
 #include "Pila.h"
 #include "Cola.h"
+#include "ZonaReparto.h"
 using namespace std;
 
 
@@ -32,6 +33,8 @@ class Gestor
         Cola Cola_zonaS;
         Cola Cola_zonaE;
         Cola Cola_zonaO;
+
+
 
 
     protected:

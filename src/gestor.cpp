@@ -7,6 +7,7 @@
 #include "vehiculo.h"
 #include "Cola.h"
 #include <time.h> // es necesario incluirla
+#include "ZonaReparto.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ Gestor::~Gestor()
     //dtor
 }
 
-void Gestor::crea_vehiculos(int nv)
+void Gestor::crea_vehiculos(int nv)         //Apartado 1 y 2
 {
     //Vehiculo vehiculos_cola;
 
@@ -31,7 +32,7 @@ void Gestor::crea_vehiculos(int nv)
     Cola_fabrica.VerCima();
     cout<<"Se han creado: "<<nv<<" vehiculos \n";
 }
-void Gestor::muestra_almacen_fabrica()
+void Gestor::muestra_almacen_fabrica()      //Apartado 3
 {
     Cola_fabrica.mostrarCola();
     /* Cola colaAux;
@@ -65,7 +66,7 @@ void Gestor::muestra_almacen_fabrica()
     }*/
 }
 
-void Gestor::limpia_almacen()
+void Gestor::limpia_almacen()               //Apartado4
 {
     if (Cola_fabrica.es_vacia())
     {
@@ -100,7 +101,7 @@ void Cola::MostrarZona()
     }
 }
 */
-void Gestor::cambioAlmacenRand(int ns)
+void Gestor::cambioAlmacenRand(int ns)          //Apartado 5
 
 {
     int almacenRandom;
@@ -154,7 +155,7 @@ void Gestor::cambioAlmacenRand(int ns)
 
     }
 }
-void Gestor::cambioAlmacen(int ns, int nAlmacen)
+void Gestor::cambioAlmacen(int ns, int nAlmacen)        //Apartado 6
 {
     if (Cola_fabrica.es_vacia())
     {
