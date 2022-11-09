@@ -29,14 +29,17 @@ class Gestor
 
         //Pilas y colas
         Cola Cola_fabrica; //Cola de la fabrica que contendra los automoviles
-        Cola Cola_zonaN;
-        Cola Cola_zonaS;
-        Cola Cola_zonaE;
-        Cola Cola_zonaO;
+
         ZonaReparto ZonaN;
         ZonaReparto ZonaE;
         ZonaReparto ZonaS;
         ZonaReparto ZonaO;
+
+        Cola Cola_zonaN=ZonaN.registro;
+        Cola Cola_zonaS=ZonaS.registro;
+        Cola Cola_zonaE=ZonaE.registro;
+        Cola Cola_zonaO=ZonaO.registro;
+
         Pila Camion1N=ZonaN.Camion1;
         Pila Camion2N=ZonaN.Camion2;
         Pila Camion1E=ZonaE.Camion1;

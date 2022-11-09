@@ -104,14 +104,6 @@ void Cola::MostrarZona()
 void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
 {
     int almacenRandom;
-    /*Pila Camion1N=ZonaN.Camion1;
-    Pila Camion2N=ZonaN.Camion2;
-    Pila Camion1E=ZonaE.Camion1;
-    Pila Camion2E=ZonaE.Camion2;
-    Pila Camion1S=ZonaS.Camion1;
-    Pila Camion2S=ZonaS.Camion2;
-    Pila Camion1O=ZonaO.Camion1;
-    Pila Camion2O=ZonaO.Camion2;*/
 
     for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
     {
@@ -141,11 +133,18 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2N.apilar(vehi);
-                        cout << Camion2N.contar()<<endl;
-                        Cola_zonaN.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        if (Camion2O.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2N.apilar(vehi);
+                            cout << Camion2N.contar()<<endl;
+                            Cola_zonaN.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (almacenRandom==2)      //Zona Sur
@@ -159,11 +158,18 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2S.apilar(vehi);
-                        cout << Camion2S.contar()<<endl;
-                        Cola_zonaS.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        if (Camion2S.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2S.apilar(vehi);
+                            cout << Camion2S.contar()<<endl;
+                            Cola_zonaS.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (almacenRandom==3)      //Zona Este
@@ -177,11 +183,18 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2E.apilar(vehi);
-                        cout << Camion2E.contar()<<endl;
-                        Cola_zonaE.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        if (Camion2E.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2E.apilar(vehi);
+                            cout << Camion2E.contar()<<endl;
+                            Cola_zonaE.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (almacenRandom==4)      //Zona Oeste
@@ -195,11 +208,18 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2O.apilar(vehi);
-                        cout << Camion2O.contar()<<endl;
-                        Cola_zonaO.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        if (Camion2O.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2O.apilar(vehi);
+                            cout << Camion2O.contar()<<endl;
+                            Cola_zonaO.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 /*else
@@ -236,11 +256,18 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2N.apilar(vehi);
-                        cout << Camion2N.contar()<<endl;
-                        Cola_zonaN.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        if (Camion2N.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2N.apilar(vehi);
+                            cout << Camion2N.contar()<<endl;
+                            Cola_zonaN.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (nAlmacen==2)       //Zona Sur
@@ -254,11 +281,18 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2S.apilar(vehi);
-                        cout << Camion2S.contar()<<endl;
-                        Cola_zonaS.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        if (Camion2S.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2S.apilar(vehi);
+                            cout << Camion2S.contar()<<endl;
+                            Cola_zonaS.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (nAlmacen==3)       //Zona Este
@@ -272,11 +306,18 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2E.apilar(vehi);
-                        cout << Camion2E.contar()<<endl;
-                        Cola_zonaE.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        if (Camion2E.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2E.apilar(vehi);
+                            cout << Camion2E.contar()<<endl;
+                            Cola_zonaE.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
                 else if (nAlmacen==4)       //Zona Oeste
@@ -290,11 +331,18 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
                     }
                     else
                     {
-                        cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
-                        Camion2O.apilar(vehi);
-                        cout << Camion2O.contar()<<endl;
-                        Cola_zonaO.encolar(vehi);
-                        cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        if (Camion2O.contar()<10)
+                        {
+                            cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
+                            Camion2O.apilar(vehi);
+                            cout << Camion2O.contar()<<endl;
+                            Cola_zonaO.encolar(vehi);
+                            cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                        }
+                        else
+                        {
+                            cout<<"Camiones llenos."<<endl;
+                        }
                     }
                 }
             }
