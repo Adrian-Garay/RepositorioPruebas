@@ -343,17 +343,45 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
                         }
                     }
                 }
-            /*if (Camion1N.contar()<np)
-                {
+
+            }
+
+        cout<<"Se han movido "<< ns << " vehiculos \n";
+        /**/if (Camion1N.contar()==np)
+            {
                 while (Camion1N.contar()!=0)
                 {
                     mueveVehi = Camion1N.fondo();
                     Camion1N.desapilar();
                     Cola_zonaN.encolar(mueveVehi);
                 }
-            }*/
-        }
-
-        cout<<"Se han movido "<< ns << " vehiculos \n";
+            }
+        if (Camion1E.contar()==np)
+            {
+                while (Camion1E.contar()!=0)
+                {
+                    mueveVehi = Camion1E.fondo();
+                    Camion1E.desapilar();
+                    Cola_zonaE.encolar(mueveVehi);
+                }
+            }
+        if (Camion1S.contar()==np)
+            {
+                while (Camion1S.contar()!=0)
+                {
+                    mueveVehi = Camion1S.fondo();
+                    Camion1S.desapilar();
+                    Cola_zonaS.encolar(mueveVehi);
+                }
+            }
+        if (Camion1O.contar()==np)
+            {
+                while (Camion1O.contar()!=0)
+                {
+                    mueveVehi = Camion1O.fondo();
+                    Camion1O.desapilar();
+                    Cola_zonaO.encolar(mueveVehi);
+                }
+            }
     }
 }
