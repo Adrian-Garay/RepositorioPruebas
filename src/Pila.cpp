@@ -19,7 +19,7 @@ bool Pila::esVacia()
 	return cima == NULL;
 }
 
-void Pila::apilar(int v)
+void Pila::apilar(Vehiculo v)
 {
 	pnodo nuevo = new NodoPila(v, cima);
 	//comienzo de la pila nevo nodo
@@ -38,21 +38,21 @@ void Pila::desapilar()
 }
 
 int Pila::mostrar()
-{
+{/*
 	if (esVacia()){
 		cout << "Pila vacia" << endl;
 	}
 	else {
 		cout << "Cima pila: " << cima->valor << endl;
 	}
-	return 0;
+	return 0;*/
 }
 
 
 int Pila::contar()
 {
     Pila p_aux;
-    int e{};
+    Vehiculo e{};
     int contador=0;
     while (esVacia()==false){
         e = Pila::cima->valor;
@@ -68,10 +68,10 @@ int Pila::contar()
     return contador;
 }
 
-int Pila::fondo() {
+Vehiculo Pila::fondo() {
 
 	Pila p_aux;
-	int e{};
+	Vehiculo e{};
 	while (!Pila::esVacia()) {
 		e = Pila::cima->valor;
 		p_aux.apilar(e);
@@ -86,10 +86,10 @@ int Pila::fondo() {
 }
 //Iterativo
 void Pila::montar(Pila p1,Pila p2){ //No funciona apilar
-    int e=0;
+    Vehiculo e;
     while(! esVacia()){
         e = cima->valor;
-        cout << e;
+        //cout << e;
         desapilar();
         p1.apilar(e);
         cout << p2.contar();
@@ -119,7 +119,7 @@ void Pila::quitar(int n){
  void Pila::inversa(){
     Pila pi;
     Pila p2;
-	int e;
+	Vehiculo e;
 	//pi = p2.inversa();
 	pi.apilar(cima->valor);
     while(! esVacia()){

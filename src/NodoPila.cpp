@@ -1,14 +1,15 @@
 #include "../include/NodoPila.h"
+#include "vehiculo.h"
 
 NodoPila::NodoPila()
 {
-	valor = 0;
+	valor = Vehiculo();
 	siguiente = NULL;
 	//ctor
 }
-NodoPila::NodoPila(int v, NodoPila* sig)
+NodoPila::NodoPila(Vehiculo v, NodoPila* sig)
 {
-	valor = v;
+	valor = Vehiculo();
 	;	siguiente = sig;
 }
 NodoPila::~NodoPila()

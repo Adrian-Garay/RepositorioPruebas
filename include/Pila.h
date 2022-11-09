@@ -1,6 +1,7 @@
 #ifndef PILA_H_INCLUDED
 #define PILA_H_INCLUDED
 #include "NodoPila.h"
+#include "vehiculo.h"
 
 class Pila
 {
@@ -10,12 +11,12 @@ class Pila
         Pila();
         virtual~Pila();
         bool esVacia();
-        void apilar(int v);
+        void apilar(Vehiculo v);
         void desapilar();
 
         int mostrar();
         int contar();
-        int fondo();
+        Vehiculo fondo();
         void montar(Pila p1, Pila p2);
         void quitar(int n);
         void inversa();

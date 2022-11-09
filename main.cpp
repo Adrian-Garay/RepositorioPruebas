@@ -22,7 +22,7 @@ int main()
     int nv = 20;    //Numero de coches creados
     int ns = 7;     //Numero de Coches movidos
     int nc = 5;     //Numero posible concesionarios
-    int np = 10     //Capacidad maxima de los camiones
+    int np = 10;     //Capacidad maxima de los camiones
     int nAlmacen;
 
     Gestor g;
@@ -94,7 +94,7 @@ int main()
                 cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
             }
-            g.cambioAlmacenRand(ns);
+            g.cambioAlmacenRand(ns, np);
 
         }
 
@@ -116,7 +116,7 @@ int main()
                 cin>>nAlmacen;
             }
 
-            g.cambioAlmacen(ns,nAlmacen);
+            g.cambioAlmacen(ns,nAlmacen, np);
 
         }
 

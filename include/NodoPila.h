@@ -1,16 +1,18 @@
 #ifndef NODOPILA_H_INCLUDED
 #define NODOPILA_H_INCLUDED
+#include "vehiculo.h"
 #include <iostream>
 
 class NodoPila
 {
+    friend class Pila;
+
 	private:
-		int valor;
+		Vehiculo valor;
 		NodoPila* siguiente;
-		friend class Pila;
 	public:
 		NodoPila();
-		NodoPila(int v, NodoPila *sig = NULL);
+		NodoPila(Vehiculo v, NodoPila *sig = NULL);
 		~NodoPila();
 };
 typedef NodoPila* pnodo;
