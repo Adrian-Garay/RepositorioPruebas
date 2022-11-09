@@ -71,7 +71,7 @@
 	"Cola.h"
 	<time.h>
 
-1667997842 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1668006029 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -102,7 +102,7 @@
 1667502608 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1667996762 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1668005879 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
@@ -115,7 +115,7 @@
 	"Cola.h"
 	<iostream>
 
-1667997500 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1668005136 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>

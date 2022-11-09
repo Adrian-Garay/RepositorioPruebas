@@ -24,8 +24,9 @@ class Gestor
         void crea_vehiculos(int nv);
         void muestra_almacen_fabrica();
         void limpia_almacen();
-        void cambioAlmacenRand(int ns, int np);
-        void cambioAlmacen(int ns,int nAlmacen, int np);
+        void cambioAlmacenRand(int ns, int np, int nc);
+        void cambioAlmacen(int ns,int nAlmacen, int np, int nc);
+        //void muestra_zonas();         //Ejercicio 7
 
         //Pilas y colas
         Cola Cola_fabrica; //Cola de la fabrica que contendra los automoviles
