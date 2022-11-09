@@ -24,7 +24,10 @@ class Gestor
         Vehiculo asignaConcesionario2(Vehiculo v, int nc);
         void crea_vehiculos(int nv);
         void muestra_almacen_fabrica();
+
+          void muestra_zonas();
         void limpia_almacen();
+
         void cambioAlmacenRand(int ns, int np, int nc);
         void cambioAlmacen(int ns,int nAlmacen, int np, int nc);
         //void muestra_zonas();         //Ejercicio 7

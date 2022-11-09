@@ -38,14 +38,15 @@ void Pila::desapilar()
 }
 
 int Pila::mostrar()
-{/*
+{
 	if (esVacia()){
 		cout << "Pila vacia" << endl;
 	}
 	else {
-		cout << "Cima pila: " << cima->valor << endl;
+		cout << "Cima pila: "<< endl;
+
 	}
-	return 0;*/
+	return 0;
 }
 
 

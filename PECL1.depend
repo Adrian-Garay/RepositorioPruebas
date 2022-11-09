@@ -1,30 +1,33 @@
 # depslib dependency file v1.0
-1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
+1668008033 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
 	"vehiculo.h"
 
-1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
+1668008033 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodocola.h
 	"vehiculo.h"
 	<iostream>
 
-1667556789 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
+1668008033 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1666720999 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
+1668008033 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\nodopila.cpp
 	"../include/NodoPila.h"
+	"vehiculo.h"
 
-1666720999 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
+1668008033 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\nodopila.h
+	"vehiculo.h"
 	<iostream>
 
-1667399938 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
+1668012178 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1667399938 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
+1668008033 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\pila.h
 	"NodoPila.h"
+	"vehiculo.h"
 
-1667595276 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
+1668008033 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
@@ -32,7 +35,7 @@
 	<string>
 	"string.h"
 
-1667654701 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
+1668013159 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -44,23 +47,24 @@
 	"string.h"
 	<locale.h>
 
-1667597289 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
+1668010650 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
-1667654490 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
+1668011714 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
+	"ZonaReparto.h"
 
-1667651015 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
+1668011258 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1667652388 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
+1668012772 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -70,8 +74,9 @@
 	"vehiculo.h"
 	"Cola.h"
 	<time.h>
+	"ZonaReparto.h"
 
-1668006029 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
+1668013160 source:c:\users\ajgar\desktop\repositoriopruebas\main.cpp
 	<iostream>
 	"include\Pila.h"
 	"include/Cola.h"
@@ -83,39 +88,39 @@
 	"string.h"
 	<locale.h>
 
-1667989156 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
+1668008034 c:\users\ajgar\desktop\repositoriopruebas\include\pila.h
 	"NodoPila.h"
 	"vehiculo.h"
 
-1667986060 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
+1668008034 c:\users\ajgar\desktop\repositoriopruebas\include\nodopila.h
 	"vehiculo.h"
 	<iostream>
 
-1667906370 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
+1668010652 c:\users\ajgar\desktop\repositoriopruebas\include\cola.h
 	"NodoCola.h"
 	"vehiculo.h"
 
-1667342636 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
+1668008034 c:\users\ajgar\desktop\repositoriopruebas\include\nodocola.h
 	"vehiculo.h"
 	<iostream>
 
-1668007622 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
+1668008034 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1668007896 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1668011716 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
 	"ZonaReparto.h"
 
-1667986494 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
+1668011260 source:c:\users\ajgar\desktop\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
 	"../include/NodoCola.h"
 	"vehiculo.h"
 	"Cola.h"
 	<iostream>
 
-1668008901 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1668013868 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -127,20 +132,20 @@
 	<time.h>
 	"ZonaReparto.h"
 
-1667342636 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
+1668008034 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodocola.cpp
 	"../include/NodoCola.h"
 	"vehiculo.h"
 
-1667986278 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
+1668008034 source:c:\users\ajgar\desktop\repositoriopruebas\src\nodopila.cpp
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1667993433 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
+1668012180 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
 
-1668007640 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
+1668008034 source:c:\users\ajgar\desktop\repositoriopruebas\src\vehiculo.cpp
 	"vehiculo.h"
 	<stdlib.h>
 	<time.h>
@@ -220,12 +225,16 @@
 	<string>
 	"string.h"
 
-1667910424 source:c:\users\ajgar\desktop\repositoriopruebas\src\zonareparto.cpp
+1668011260 source:c:\users\ajgar\desktop\repositoriopruebas\src\zonareparto.cpp
 	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
 
-1667910588 c:\users\ajgar\desktop\repositoriopruebas\include\zonareparto.h
+1668011570 c:\users\ajgar\desktop\repositoriopruebas\include\zonareparto.h
 	"Cola.h"
 	"Pila.h"
+	"vehiculo.h"
 
 1667986494 source:d:\segundo\tercercuatrimestre\estructurasdedatos\laboratorio\copiaseguridadpec1\dia9nov\repositoriopruebas\src\cola.cpp
 	"../include/Cola.h"
@@ -310,4 +319,15 @@
 	"Cola.h"
 	<time.h>
 	"ZonaReparto.h"
+
+1668011568 c:\users\fatim\onedrive\escritorio\repositoriopruebas\include\zonareparto.h
+	"Cola.h"
+	"Pila.h"
+	"vehiculo.h"
+
+1668011258 source:c:\users\fatim\onedrive\escritorio\repositoriopruebas\src\zonareparto.cpp
+	"ZonaReparto.h"
+	"Cola.h"
+	"string.h"
+	"vehiculo.h"
 

@@ -91,8 +91,7 @@ void Cola::mostrarCola()
     }
     else
     {
-        //while ((!es_vacia()) && (get_longitud() > 0))
-        //{
+
         cout<<"Cola fabrica longitud  = "+to_string(get_longitud()) + "\n";
         for(int i=0; i<longitud; i++)
         {
