@@ -105,14 +105,14 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
 
 {
     int almacenRandom;
-    Pila Camion1N;
-    Pila Camion2N;
-    Pila Camion1E;
-    Pila Camion2E;
-    Pila Camion1S;
-    Pila Camion2S;
-    Pila Camion1O;
-    Pila Camion2O;
+    Pila Camion1N=ZonaN.Camion1;
+    Pila Camion2N=ZonaN.Camion2;
+    Pila Camion1E=ZonaE.Camion1;
+    Pila Camion2E=ZonaE.Camion2;
+    Pila Camion1S=ZonaS.Camion1;
+    Pila Camion2S=ZonaS.Camion2;
+    Pila Camion1O=ZonaO.Camion1;
+    Pila Camion2O=ZonaO.Camion2;
 
     for (int i=1; i<=5; i++)                                //Crea los digitos aleatorios para el almacen aleatorio
     {
@@ -134,13 +134,7 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                 vehi = Cola_fabrica.inicio();
                 Cola_fabrica.desencolar();
                 if (almacenRandom==1)           //Zona Norte
-                {/**/
-                    Camion1N=ZonaN.Camion1;
-                    //Camion1N.fondo();
-                    /*if (Camion1N.contar()==np)
-                        {
-                            cout <<"Camion lleno, se pasa al siguiente";
-                        }*/
+                {
                     Camion1N.apilar(vehi);
                     cout << Camion1N.contar()<<endl;
                     Cola_zonaN.encolar(vehi);
@@ -148,16 +142,22 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
                 }
                 else if (almacenRandom==2)      //Zona Sur
                 {
+                    Camion1S.apilar(vehi);
+                    cout << Camion1S.contar()<<endl;
                     Cola_zonaS.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
                 else if (almacenRandom==3)      //Zona Este
                 {
+                    Camion1E.apilar(vehi);
+                    cout << Camion1E.contar()<<endl;
                     Cola_zonaE.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
                 else if (almacenRandom==4)      //Zona Oeste
                 {
+                    Camion1O.apilar(vehi);
+                    cout << Camion1O.contar()<<endl;
                     Cola_zonaO.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< almacenRandom <<"\n"<<"\n";
                 }
@@ -174,14 +174,14 @@ void Gestor::cambioAlmacenRand(int ns, int np)          //Apartado 5
 }
 void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
 {
-    Pila Camion1N;
-    Pila Camion2N;
-    Pila Camion1E;
-    Pila Camion2E;
-    Pila Camion1S;
-    Pila Camion2S;
-    Pila Camion1O;
-    Pila Camion2O;
+    Pila Camion1N=ZonaN.Camion1;
+    Pila Camion2N=ZonaN.Camion2;
+    Pila Camion1E=ZonaE.Camion1;
+    Pila Camion2E=ZonaE.Camion2;
+    Pila Camion1S=ZonaS.Camion1;
+    Pila Camion2S=ZonaS.Camion2;
+    Pila Camion1O=ZonaO.Camion1;
+    Pila Camion2O=ZonaO.Camion2;
 
     if (Cola_fabrica.es_vacia())
     {
@@ -195,32 +195,32 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np)        //Apartado 6
             {
                 vehi = Cola_fabrica.inicio();
                 Cola_fabrica.desencolar();
-                if (nAlmacen==1)
-                {/**/
-                    Camion1N=ZonaN.Camion1;
-                    //Camion1N.fondo();
-                    /*if (Camion1N.contar()==np)
-                        {
-                            cout <<"Camion lleno, se pasa al siguiente";
-                        }*/
+                cout << vehi.verVehiculo();
+                if (nAlmacen==1)           //Zona Norte
+                {
                     Camion1N.apilar(vehi);
                     cout << Camion1N.contar()<<endl;
-                    cout<< "Se mete un Vehiculo"<<endl;
                     Cola_zonaN.encolar(vehi);
-                    cout<<"Llevado a almacen número: "<< nAlmacen <<"\n"<<"\n";
+                    cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen==2)
+                else if (nAlmacen==2)       //Zona Sur
                 {
+                    Camion1S.apilar(vehi);
+                    cout << Camion1S.contar()<<endl;
                     Cola_zonaS.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen==3)
+                else if (nAlmacen==3)       //Zona Este
                 {
+                    Camion1E.apilar(vehi);
+                    cout << Camion1E.contar()<<endl;
                     Cola_zonaE.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }
-                else if (nAlmacen==4)
+                else if (nAlmacen==4)       //Zona Oeste
                 {
+                    Camion1O.apilar(vehi);
+                    cout << Camion1O.contar()<<endl;
                     Cola_zonaO.encolar(vehi);
                     cout<<"Llevados a almacen número: "<< nAlmacen <<"\n"<<"\n";
                 }

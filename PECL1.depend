@@ -115,7 +115,7 @@
 	"Cola.h"
 	<iostream>
 
-1667990208 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1667994497 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
@@ -135,7 +135,7 @@
 	"../include/NodoPila.h"
 	"vehiculo.h"
 
-1667989288 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
+1667993433 source:c:\users\ajgar\desktop\repositoriopruebas\src\pila.cpp
 	<iostream>
 	"../include/Pila.h"
 	"../include/NodoPila.h"
