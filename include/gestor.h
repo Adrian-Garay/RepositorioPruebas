@@ -37,6 +37,14 @@ class Gestor
         ZonaReparto ZonaE;
         ZonaReparto ZonaS;
         ZonaReparto ZonaO;
+        Pila Camion1N=ZonaN.Camion1;
+        Pila Camion2N=ZonaN.Camion2;
+        Pila Camion1E=ZonaE.Camion1;
+        Pila Camion2E=ZonaE.Camion2;
+        Pila Camion1S=ZonaS.Camion1;
+        Pila Camion2S=ZonaS.Camion2;
+        Pila Camion1O=ZonaO.Camion1;
+        Pila Camion2O=ZonaO.Camion2;
 
 
 

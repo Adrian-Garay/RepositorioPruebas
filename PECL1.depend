@@ -102,7 +102,7 @@
 1667502608 c:\users\ajgar\desktop\repositoriopruebas\include\vehiculo.h
 	<string>
 
-1667987692 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
+1667994760 c:\users\ajgar\desktop\repositoriopruebas\include\gestor.h
 	<iostream>
 	"Pila.h"
 	"Cola.h"
@@ -115,7 +115,7 @@
 	"Cola.h"
 	<iostream>
 
-1667994497 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
+1667996282 source:c:\users\ajgar\desktop\repositoriopruebas\src\gestor.cpp
 	<string>
 	<iostream>
 	<stdlib.h>
