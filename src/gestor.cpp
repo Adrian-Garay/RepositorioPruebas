@@ -21,6 +21,16 @@ Gestor::~Gestor()
     //dtor
 }
 
+Vehiculo Gestor::asignaConcesionario2(Vehiculo vehi, int nc)
+{
+    int num;
+
+    num = 1 + rand() % (nc); //GENERA ALEATORIOS ENTRE 0 Y 5
+    //cout << num<< "";
+    vehi.concesionario=num;
+    return vehi;
+}
+
 void Gestor::crea_vehiculos(int nv)         //Apartado 1 y 2
 {
     //Vehiculo vehiculos_cola;
@@ -395,7 +405,8 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 while (Camion1N.contar()!=0)
                 {
                     mueveVehi = Camion1N.fondo();
-                    mueveVehi.asignaConcesionario(nc);
+                    //mueveVehi.asignaConcesionario(nc);
+                    mueveVehi = asignaConcesionario2(mueveVehi, nc);
                     cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
                     Camion1N.desapilar();
                     Cola_zonaN.encolar(mueveVehi);

@@ -72,3 +72,4 @@ void Vehiculo::asignaConcesionario(int nc)
     //cout << num<< "";
     Vehiculo::concesionario=num;
 }
+

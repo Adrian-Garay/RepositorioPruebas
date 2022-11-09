@@ -21,6 +21,7 @@ class Gestor
 
 
         //funciones
+        Vehiculo asignaConcesionario2(Vehiculo v, int nc);
         void crea_vehiculos(int nv);
         void muestra_almacen_fabrica();
         void limpia_almacen();
