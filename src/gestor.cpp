@@ -143,7 +143,7 @@ void Gestor::cambioAlmacenRand(int ns, int np, int nc)          //Apartado 5
                     }
                     else
                     {
-                        if (Camion2O.contar()<np)
+                        if (Camion2N.contar()<np)
                         {
                             cout<< "\nCamion 1 lleno, se llevan al siguiente"<<endl;
                             Camion2N.apilar(vehi);
@@ -405,8 +405,8 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 while (Camion1N.contar()!=0)
                 {
                     mueveVehi = Camion1N.fondo();
-                    //mueveVehi.asignaConcesionario(nc);
-                    mueveVehi = asignaConcesionario2(mueveVehi, nc);
+                    mueveVehi.asignaConcesionario(nc);
+                    //mueveVehi = asignaConcesionario2(mueveVehi, nc);
                     cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
                     Camion1N.desapilar();
                     Cola_zonaN.encolar(mueveVehi);
@@ -428,6 +428,7 @@ void Gestor::cambioAlmacen(int ns, int nAlmacen, int np, int nc)        //Aparta
                 while (Camion1S.contar()!=0)
                 {
                     mueveVehi = Camion1S.fondo();
+                    //cout <<"El Sale el vehiculo es: " <<mueveVehi.verVehiculo()<<endl;
                     mueveVehi.asignaConcesionario(nc);
                     cout <<"El vehiculo final es: " <<mueveVehi.verVehiculo()<<endl;
                     Camion1S.desapilar();
