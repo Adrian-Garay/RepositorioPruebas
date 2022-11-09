@@ -94,7 +94,7 @@ int main()
                 cout << "Error: Debe pedir minimo 3 automoviles y como máximo 8.\n";
                 cin>>ns;
             }
-            g.cambioAlmacenRand(ns, np);
+            g.cambioAlmacenRand(ns,np);
 
         }
 
@@ -116,7 +116,7 @@ int main()
                 cin>>nAlmacen;
             }
 
-            g.cambioAlmacen(ns,nAlmacen, np);
+            g.cambioAlmacen(ns,nAlmacen,np);
 
         }
 
