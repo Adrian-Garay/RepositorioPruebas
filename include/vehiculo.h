@@ -17,6 +17,7 @@ class Vehiculo
         std::string devolverNBastidor();
         int devolverConcesionario();
         std::string verVehiculo();
+        void asignaConcesionario(int nc);
 
 
         /**<void crear ();
